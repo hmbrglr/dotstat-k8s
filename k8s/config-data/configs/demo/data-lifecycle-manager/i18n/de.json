@@ -1,0 +1,14 @@
+{
+  "permission.group.145": "Strukturen verändern",
+  "permission.group.145.definition": "Ermöglicht das Abrufen, Einfügen und Aktualisieren von Strukturinformationen",
+  "permission.group.2051": "Lesen Sie Strukturen und gesperrte Daten",
+  "permission.group.2051.definition": "Ermöglicht das Abrufen von Strukturinformationen sowie gesperrten und nicht gesperrten Datenn",
+  "permission.group.3": "Lesen Sie Strukturen und Daten",
+  "permission.group.3.definition": "Ermöglicht das Abrufen von Strukturinformationen und Daten ohne Embargo",
+  "permission.group.3363": "Daten verwalten",
+  "permission.group.3363.definition": "Ermöglicht das Abrufen von Strukturinformationen und das Abrufen, Einfügen, Aktualisieren und Löschen von gesperrten und nicht gesperrten Daten",
+  "permission.group.4095": "Volle Kontrolle",
+  "permission.group.4095.definition": "Ermöglicht die vollständige Verwaltung von Strukturinformationen, gesperrten und nicht gesperrten Daten und Berechtigungen",
+  "permission.group.657": "Strukturen verwalten",
+  "permission.group.657.definition": "Ermöglicht das Abrufen, Einfügen, Aktualisieren und Löschen von Strukturinformationen"
+}

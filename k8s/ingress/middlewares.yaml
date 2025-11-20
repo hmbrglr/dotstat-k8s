@@ -1,0 +1,73 @@
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: sfs-redirect-root
+  namespace: dotstat
+spec:
+  replacePathRegex:
+    regex: ^/$
+    replacement: /admin
+---
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: strip-br
+  namespace: dotstat
+spec:
+  replacePathRegex:
+    regex: ^/(static/.*)\.br(\?.*)?$
+    replacement: /$1$2
+---
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: no-encoding
+  namespace: dotstat
+spec:
+  headers:
+    customRequestHeaders:
+      Accept-Encoding: ""
+    customResponseHeaders:
+      Content-Encoding: ""
+---
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: explorer-redirect-root
+  namespace: dotstat
+spec:
+  redirectRegex:
+    regex: ^/$
+    replacement: /index.html?tenant=demo
+---
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: lifecycle-redirect-root
+  namespace: dotstat
+spec:
+  redirectRegex:
+    regex: ^/$
+    replacement: /index.html?tenant=demo
+---
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: allow-keycloak-csp
+  namespace: dotstat
+spec:
+  headers:
+    customResponseHeaders:
+      X-Frame-Options: ""
+    contentSecurityPolicy: >-
+      default-src 'self' http://keycloak.local; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://keycloak.local; style-src 'self' 'unsafe-inline' http://keycloak.local; img-src 'self' data: http://keycloak.local; connect-src 'self' http://keycloak.local; frame-src 'self' http://keycloak.local; frame-ancestors 'self' http://keycloak.local;
+---
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: viewer-redirect-root
+  namespace: dotstat
+spec:
+  redirectRegex:
+    regex: ^/$
+    replacement: /index.html?tenant=demo

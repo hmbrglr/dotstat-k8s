@@ -1,0 +1,34 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: viewer-ingress
+  namespace: dotstat
+  annotations:
+    traefik.ingress.kubernetes.io/router.middlewares: dotstat-no-encoding@kubernetescrd,dotstat-strip-br@kubernetescrd,dotstat-viewer-redirect-root@kubernetescrd
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: viewer.local
+      http:
+        paths:
+          - path: /configs
+            pathType: Prefix
+            backend:
+              service:
+                name: config-server
+                port:
+                  number: 80
+          - path: /i18n
+            pathType: Prefix
+            backend:
+              service:
+                name: config-server
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: data-viewer
+                port:
+                  number: 80

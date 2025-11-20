@@ -1,0 +1,14 @@
+{
+  "permission.group.145": "Change structures",
+  "permission.group.145.definition": "Allows retrieving, inserting and updating structural information",
+  "permission.group.2051": "Read structures and embargoed data",
+  "permission.group.2051.definition": "Allows retrieving structural information and embargoed and non-embargoed data",
+  "permission.group.3": "Read structures and data",
+  "permission.group.3.definition": "Allows retrieving structural information and non-embargoed data",
+  "permission.group.3363": "Manage data",
+  "permission.group.3363.definition": "Allows retrieving structural information and retrieving, inserting, updating and deleting embargoed and non-embargoed data",
+  "permission.group.4095": "Full control",
+  "permission.group.4095.definition": "Allows fully managing structural information, embargoed and non-embargoed data, and permissions",
+  "permission.group.657": "Manage structures",
+  "permission.group.657.definition": "Allows retrieving, inserting, updating and deleting structural information"
+}

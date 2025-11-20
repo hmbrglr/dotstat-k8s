@@ -1,0 +1,14 @@
+{
+  "permission.group.145": "Modifier les structures",
+  "permission.group.145.definition": "Permet de récupérer (lire), d'insérer et de mettre à jour les informations structurelles",
+  "permission.group.2051": "Lire les structures et les données sous embargo",
+  "permission.group.2051.definition": "Permet de récupérer (lire) les informations structurelles et les données sous embargo ou non",
+  "permission.group.3": "Lire les structures et les données",
+  "permission.group.3.definition": "Permet de récupérer (lire) les informations structurelles et les données non sous embargo",
+  "permission.group.3363": "Gérer les données",
+  "permission.group.3363.definition": "Permet de récupérer (lire) les informations structurelles et de récupérer (lire), d'insérer, de mettre à jour et de supprimer les données sous embargo ou non",
+  "permission.group.4095": "Controle total",
+  "permission.group.4095.definition": "Permet de gérer entièrement les informations structurelles, les données sous embargo ou non, et les autorisations",
+  "permission.group.657": "Gérer les structures",
+  "permission.group.657.definition": "Permet de récupérer (lire), d'insérer, de mettre à jour et de supprimer les informations structurelles"
+}

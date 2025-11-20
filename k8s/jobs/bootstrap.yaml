@@ -1,0 +1,61 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: bootstrap-dotstat
+  namespace: dotstat
+spec:
+  ttlSecondsAfterFinished: 86400
+  template:
+    metadata:
+      labels:
+        app: bootstrap-dotstat
+    spec:
+      restartPolicy: OnFailure
+      nodeSelector:
+        kubernetes.io/hostname: k3d-dotstat-server-0
+      containers:
+        - name: bootstrap
+          image: curlimages/curl:8.17.0 # Changed to latest
+          imagePullPolicy: IfNotPresent
+          command: ["/bin/sh","-lc"]
+          args:
+            - |
+              set -e
+              echo "[bootstrap] Checking config PV contents..."
+              ASSETS_DIR="/data/assets/siscc"
+              I18N_DIR="/data/i18n"
+              missing=0
+              if [ ! -d "$ASSETS_DIR" ] || [ -z "$(ls -A "$ASSETS_DIR" 2>/dev/null || true)" ]; then
+                echo "[bootstrap][WARN] Assets not found at $ASSETS_DIR"
+                echo "[bootstrap][HINT] Seed assets from your workstation:"
+                echo "  kubectl cp k8s/config-data/assets/siscc dotstat/$(kubectl get pod -n dotstat -l app=config-server -o jsonpath='{.items[0].metadata.name}'):/app/data/assets/"
+                missing=1
+              else
+                echo "[bootstrap] Assets present"
+              fi
+              if [ ! -d "$I18N_DIR" ] || [ -z "$(ls -A "$I18N_DIR" 2>/dev/null || true)" ]; then
+                echo "[bootstrap][WARN] i18n not found at $I18N_DIR"
+                echo "[bootstrap][HINT] Seed i18n from your workstation:"
+                echo "  kubectl cp k8s/config-data/i18n dotstat/$(kubectl get pod -n dotstat -l app=config-server -o jsonpath='{.items[0].metadata.name}'):/app/data/i18n"
+                missing=1
+              else
+                echo "[bootstrap] i18n present"
+              fi
+
+              echo "[bootstrap] Verifying Keycloak realm discovery..."
+              KC_CODE=$(curl -s -o /dev/null -w "%{http_code}" http://keycloak:8080/realms/demo/.well-known/openid-configuration || true)
+              echo "[bootstrap] Keycloak discovery HTTP $KC_CODE"
+              if [ "$KC_CODE" != "200" ]; then
+                echo "[bootstrap][WARN] Demo realm not available yet. Ensure auto-import is enabled or import manually."
+              fi
+
+              echo "[bootstrap] Ensuring Solr 'demo' collection exists..."
+              curl -s "http://solr-svc:8983/solr/admin/collections?action=CREATE&name=demo&numShards=1&replicationFactor=1" || true
+              echo "[bootstrap] Done."
+          volumeMounts:
+            - name: config-data
+              mountPath: /data
+      volumes:
+        - name: config-data
+          persistentVolumeClaim:
+            claimName: pvc-config-data

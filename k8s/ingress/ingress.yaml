@@ -1,0 +1,163 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dotstat-ingress
+  namespace: dotstat
+  annotations:
+    traefik.ingress.kubernetes.io/router.middlewares: dotstat-no-encoding@kubernetescrd,dotstat-strip-br@kubernetescrd
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: keycloak.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: keycloak
+                port:
+                  number: 8080
+    - host: explorer.local
+      http:
+        paths:
+          - path: /configs
+            pathType: Prefix
+            backend:
+              service:
+                name: config-server
+                port:
+                  number: 80
+          - path: /i18n
+            pathType: Prefix
+            backend:
+              service:
+                name: config-server
+                port:
+                  number: 80
+          - path: /assets
+            pathType: Prefix
+            backend:
+              service:
+                name: config-server
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: data-explorer
+                port:
+                  number: 80
+    - host: lifecycle.local
+      http:
+        paths:
+          - path: /configs
+            pathType: Prefix
+            backend:
+              service:
+                name: config-server
+                port:
+                  number: 80
+          - path: /i18n
+            pathType: Prefix
+            backend:
+              service:
+                name: config-server
+                port:
+                  number: 80
+          - path: /assets
+            pathType: Prefix
+            backend:
+              service:
+                name: config-server
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: lifecycle-manager
+                port:
+                  number: 80
+    - host: sfs.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: sfs
+                port:
+                  number: 80
+    - host: nsi.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: nsiws-production
+                port:
+                  number: 80
+    - host: maildev.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: maildev
+                port:
+                  number: 1080
+    - host: auth.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: auth-service
+                port:
+                  number: 80
+    - host: transfer.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: transfer-service
+                port:
+                  number: 80
+    - host: share.local
+      http:
+        paths:
+          - path: /configs
+            pathType: Prefix
+            backend:
+              service:
+                name: config-server
+                port:
+                  number: 80
+          - path: /i18n
+            pathType: Prefix
+            backend:
+              service:
+                name: config-server
+                port:
+                  number: 80
+          - path: /assets
+            pathType: Prefix
+            backend:
+              service:
+                name: config-server
+                port:
+                  number: 80
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: share
+                port:
+                  number: 80

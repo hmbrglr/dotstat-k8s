@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+    <message:Header>
+        <message:ID>DUMMY_MSD</message:ID>
+        <message:Test>false</message:Test>
+        <message:Prepared>2025-11-19T00:00:00Z</message:Prepared>
+        <message:Sender id="OECD"/>
+    </message:Header>
+    <message:Structures>
+        <structure:MetadataStructures>
+            <structure:MetadataStructure id="MSD_REF_METADATA" agencyID="OECD" version="1.0">
+                <common:Name xml:lang="en">Dummy MSD</common:Name>
+                <structure:MetadataStructureComponents>
+                    <structure:MetadataTarget id="TARGET">
+                        <structure:DataSetTarget/>
+                    </structure:MetadataTarget>
+                    <structure:ReportStructure id="REPORT">
+                        <structure:MetadataTarget>TARGET</structure:MetadataTarget>
+                    </structure:ReportStructure>
+                </structure:MetadataStructureComponents>
+            </structure:MetadataStructure>
+        </structure:MetadataStructures>
+    </message:Structures>
+</message:Structure>

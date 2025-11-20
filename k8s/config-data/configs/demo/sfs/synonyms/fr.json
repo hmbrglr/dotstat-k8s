@@ -1,0 +1,3015 @@
+{
+    "femme": [
+        "femme",
+        "femelle",
+        "féminin"
+    ],
+    "femelle": [
+        "femme",
+        "femelle",
+        "féminin"
+    ],
+    "féminin": [
+        "femme",
+        "femelle",
+        "féminin"
+    ],
+    "homme": [
+        "homme",
+        "mâle",
+        "masculin"
+    ],
+    "mâle": [
+        "homme",
+        "mâle",
+        "masculin"
+    ],
+    "masculin": [
+        "homme",
+        "mâle",
+        "masculin"
+    ],
+    "administration publique": [
+        "administration publique",
+        "gouvernement",
+        "gouvernance"
+    ],
+    "gouvernement": [
+        "administration publique",
+        "gouvernement",
+        "gouvernance"
+    ],
+    "gouvernance": [
+        "administration publique",
+        "gouvernement",
+        "gouvernance"
+    ],
+    "aide étrangère": [
+        "aide étrangère",
+        "APD",
+        "assistance"
+    ],
+    "APD": [
+        "aide étrangère",
+        "APD",
+        "assistance"
+    ],
+    "assistance": [
+        "aide étrangère",
+        "APD",
+        "assistance"
+    ],
+    "social": [
+        "social",
+        "société",
+        "sociétal"
+    ],
+    "société": [
+        "social",
+        "société",
+        "sociétal"
+    ],
+    "sociétal": [
+        "social",
+        "société",
+        "sociétal"
+    ],
+    "taxe à la consommation": [
+        "taxe à la consommation",
+        "taxe sur la valeur ajoutée",
+        "taxe de vente générale",
+        "TVA",
+        "TPS"
+    ],
+    "taxe sur la valeur ajoutée": [
+        "taxe à la consommation",
+        "taxe sur la valeur ajoutée",
+        "taxe de vente générale",
+        "TVA",
+        "TPS"
+    ],
+    "taxe de vente générale": [
+        "taxe à la consommation",
+        "taxe sur la valeur ajoutée",
+        "taxe de vente générale",
+        "TVA",
+        "TPS"
+    ],
+    "TVA": [
+        "taxe à la consommation",
+        "taxe sur la valeur ajoutée",
+        "taxe de vente générale",
+        "TVA",
+        "TPS"
+    ],
+    "TPS": [
+        "taxe à la consommation",
+        "taxe sur la valeur ajoutée",
+        "taxe de vente générale",
+        "TVA",
+        "TPS"
+    ],
+    "dépenses de consommation": [
+        "dépenses de consommation",
+        "consommation",
+        "dépenses des ménages"
+    ],
+    "consommation": [
+        "dépenses de consommation",
+        "consommation",
+        "dépenses des ménages"
+    ],
+    "dépenses des ménages": [
+        "dépenses de consommation",
+        "consommation",
+        "dépenses des ménages"
+    ],
+    "VA": [
+        "VA",
+        "valeur ajoutée"
+    ],
+    "valeur ajoutée": [
+        "VA",
+        "valeur ajoutée"
+    ],
+    "tertiaire": [
+        "tertiaire",
+        "université"
+    ],
+    "université": [
+        "tertiaire",
+        "université"
+    ],
+    "bonheur": [
+        "bonheur",
+        "bien-être subjectif",
+        "bien-être",
+        "bien être"
+    ],
+    "bien-être subjectif": [
+        "bonheur",
+        "bien-être subjectif",
+        "bien-être",
+        "bien être"
+    ],
+    "bien-être": [
+        "bonheur",
+        "bien-être subjectif",
+        "bien-être",
+        "bien être"
+    ],
+    "bien être": [
+        "bonheur",
+        "bien-être subjectif",
+        "bien-être",
+        "bien être"
+    ],
+    "bienêtre": [
+        "bonheur",
+        "bien-être subjectif",
+        "bien-être",
+        "bien être"
+    ],
+    "migration": [
+        "migration",
+        "immigration"
+    ],
+    "immigration": [
+        "migration",
+        "immigration"
+    ],
+    "ferme": [
+        "ferme",
+        "agriculture",
+        "agricole"
+    ],
+    "agriculture": [
+        "ferme",
+        "agriculture",
+        "agricole"
+    ],
+    "agricole": [
+        "ferme",
+        "agriculture",
+        "agricole"
+    ],
+    "Salaires": [
+        "Salaires",
+        "traitements"
+    ],
+    "traitements": [
+        "Salaires",
+        "traitements"
+    ],
+    "ecommerce": [
+        "ecommerce",
+        "e-commerce",
+        "commerce électronique"
+    ],
+    "e-commerce": [
+        "ecommerce",
+        "e-commerce",
+        "commerce électronique"
+    ],
+    "e commerce": [
+        "ecommerce",
+        "e-commerce",
+        "commerce électronique"
+    ],
+    "commerce électronique": [
+        "ecommerce",
+        "e-commerce",
+        "commerce électronique"
+    ],
+    "e gouvernement": [
+        "e-gouvernement"
+    ],
+    "e-gouvernement": [
+        "e-gouvernement"
+    ],
+    "court terme": [
+        "court terme",
+        "court-terme"
+    ],
+    "court-terme": [
+        "court terme",
+        "court-terme"
+    ],
+    "long-terme": [
+        "long-terme",
+        "long terme"
+    ],
+    "long terme": [
+        "long-terme",
+        "long terme"
+    ],
+    "sud est": [
+        "sud est",
+        "sud-est"
+    ],
+    "sud-est": [
+        "sud est",
+        "sud-est"
+    ],
+    "PIB": [
+        "PIB",
+        "produit intérieur brut",
+        "produit intérieur"
+    ],
+    "produit intérieur brut": [
+        "PIB",
+        "produit intérieur brut",
+        "produit intérieur"
+    ],
+    "produit intérieur": [
+        "PIB",
+        "produit intérieur brut",
+        "produit intérieur"
+    ],
+    "compétences": [
+        "compétences",
+        "éducation",
+        "formation"
+    ],
+    "éducation": [
+        "compétences",
+        "éducation",
+        "formation"
+    ],
+    "formation": [
+        "compétences",
+        "éducation",
+        "formation"
+    ],
+    "fiscal": [
+        "fiscal",
+        "fiscalité"
+    ],
+    "fiscalité": [
+        "fiscal",
+        "fiscalité"
+    ],
+    "perspectives": [
+        "perspectives",
+        "prévisions"
+    ],
+    "prévisions": [
+        "perspectives",
+        "prévisions"
+    ],
+    "soutien": [
+        "soutien",
+        "subvention"
+    ],
+    "subvention": [
+        "soutien",
+        "subvention"
+    ],
+    "liste noire": [
+        "liste noire",
+        "paradis fiscal"
+    ],
+    "paradis fiscal": [
+        "liste noire",
+        "paradis fiscal"
+    ],
+    "BEPS": [
+        "BEPS",
+        "érosion de la base d'imposition et transfert de bénéfices"
+    ],
+    "érosion de la base d'imposition et transfert de bénéfices": [
+        "BEPS",
+        "érosion de la base d'imposition et transfert de bénéfices"
+    ],
+    "PISA": [
+        "PISA",
+        "programme d'évaluation internationale des étudiants"
+    ],
+    "programme d'évaluation internationale des étudiants": [
+        "PISA",
+        "programme d'évaluation internationale des étudiants"
+    ],
+    "NAEC": [
+        "NAEC",
+        "nouvelles approches des défis économiques"
+    ],
+    "nouvelles approches des défis économiques": [
+        "NAEC",
+        "nouvelles approches des défis économiques"
+    ],
+    "crise économique": [
+        "crise économique",
+        "crise financière"
+    ],
+    "crise financière": [
+        "crise économique",
+        "crise financière"
+    ],
+    "droits des femmes": [
+        "droits des femmes",
+        "autonomisation des femmes",
+        "égalité des genres"
+    ],
+    "autonomisation des femmes": [
+        "droits des femmes",
+        "autonomisation des femmes",
+        "égalité des genres"
+    ],
+    "égalité des genres": [
+        "droits des femmes",
+        "autonomisation des femmes",
+        "égalité des genres"
+    ],
+    "TALIS": [
+        "TALIS",
+        "l'enseignement et l'apprentissage des études internationales"
+    ],
+    "l'enseignement et l'apprentissage des études internationales": [
+        "TALIS",
+        "l'enseignement et l'apprentissage des études internationales"
+    ],
+    "données": [
+        "données",
+        "indicateur",
+        "statistique"
+    ],
+    "indicateur": [
+        "données",
+        "indicateur",
+        "statistique"
+    ],
+    "statistique": [
+        "données",
+        "indicateur",
+        "statistique"
+    ],
+    "inégalité": [
+        "répartition des revenus",
+        "égalité",
+        "inégalité",
+        "gini"
+    ],
+    "gini": [
+        "répartition des revenus",
+        "égalité",
+        "inégalité",
+        "gini"
+    ],
+    "égalité": [
+        "répartition des revenus",
+        "égalité",
+        "inégalité",
+        "gini"
+    ],
+    "répartition des revenus": [
+        "répartition des revenus",
+        "égalité",
+        "inégalité",
+        "gini"
+    ],
+    "coefficient de Gini": [
+        "coefficient de Gini",
+        "indice de Gini"
+    ],
+    "indice de Gini": [
+        "coefficient de Gini",
+        "indice de Gini"
+    ],
+    "population": [
+        "population",
+        "démographie"
+    ],
+    "démographie": [
+        "population",
+        "démographie"
+    ],
+    "PIAAC": [
+        "PIAAC",
+        "enquête sur les compétences des adultes"
+    ],
+    "enquête sur les compétences des adultes": [
+        "PIAAC",
+        "enquête sur les compétences des adultes"
+    ],
+    "inflation": [
+        "inflation",
+        "IPC",
+        "indice des prix à la consommation",
+        "prix à la consommation"
+    ],
+    "IPC": [
+        "inflation",
+        "IPC",
+        "indice des prix à la consommation",
+        "prix à la consommation"
+    ],
+    "indice des prix à la consommation": [
+        "inflation",
+        "IPC",
+        "indice des prix à la consommation",
+        "prix à la consommation"
+    ],
+    "prix à la consommation": [
+        "inflation",
+        "IPC",
+        "indice des prix à la consommation",
+        "prix à la consommation"
+    ],
+    "investissement direct": [
+        "investissement direct",
+        "IDE",
+        "investissement direct étranger"
+    ],
+    "IDE": [
+        "investissement direct",
+        "IDE",
+        "investissement direct étranger"
+    ],
+    "investissement direct étranger": [
+        "investissement direct",
+        "IDE",
+        "investissement direct étranger"
+    ],
+    "TIC": [
+        "TIC",
+        "informatique"
+    ],
+    "informatique": [
+        "TIC",
+        "informatique"
+    ],
+    "technologie de l'information et des communications": [
+        "technologie de l'information et des communications",
+        "technologie de l'information"
+    ],
+    "technologie de l'information": [
+        "technologie de l'information et des communications",
+        "technologie de l'information"
+    ],
+    "pourcentage": [
+        "pourcentage",
+        "part"
+    ],
+    "part": [
+        "pourcentage",
+        "part"
+    ],
+    "USD": [
+        "USD",
+        "dollar américain",
+        "dollar"
+    ],
+    "dollar américain": [
+        "USD",
+        "dollar américain",
+        "dollar"
+    ],
+    "dollar": [
+        "USD",
+        "dollar américain",
+        "dollar"
+    ],
+    "Africain": [
+        "Africain",
+        "Afrique"
+    ],
+    "Afrique": [
+        "Africain",
+        "Afrique"
+    ],
+    "Asiatique": [
+        "Asiatique",
+        "Asie"
+    ],
+    "Asie": [
+        "Asiatique",
+        "Asie"
+    ],
+    "Européen": [
+        "Européen",
+        "Europe",
+        "UE",
+        "Union Européenne"
+    ],
+    "Europe": [
+        "Européen",
+        "Europe",
+        "UE",
+        "Union Européenne"
+    ],
+    "Union Européenne": [
+        "Européen",
+        "Europe",
+        "UE",
+        "Union Européenne"
+    ],
+    "UE": [
+        "Européen",
+        "Europe",
+        "UE",
+        "Union Européenne"
+    ],
+    "Afghan": [
+        "AFG",
+        "Afghan",
+        "Afghanistan",
+        "AF"
+    ],
+    "Afghanistan": [
+        "AFG",
+        "Afghan",
+        "Afghanistan",
+        "AF"
+    ],
+    "AFG": [
+        "AFG",
+        "Afghan",
+        "Afghanistan",
+        "AF"
+    ],
+    "AF": [
+        "AFG",
+        "Afghan",
+        "Afghanistan",
+        "AF"
+    ],
+    "Anglais": [
+        "Anglais",
+        "Angleterre"
+    ],
+    "Angleterre": [
+        "Anglais",
+        "Angleterre"
+    ],
+    "Émirats": [
+        "ARE",
+        "Émirats",
+        "Émirats arabes unis",
+        "EAU",
+        "AE"
+    ],
+    "Émirats arabes unis": [
+        "ARE",
+        "Émirats",
+        "Émirats arabes unis",
+        "EAU",
+        "AE"
+    ],
+    "EAU": [
+        "ARE",
+        "Émirats",
+        "Émirats arabes unis",
+        "EAU",
+        "AE"
+    ],
+    "ARE": [
+        "ARE",
+        "Émirats",
+        "Émirats arabes unis",
+        "EAU",
+        "AE"
+    ],
+    "AE": [
+        "ARE",
+        "Émirats",
+        "Émirats arabes unis",
+        "EAU",
+        "AE"
+    ],
+    "Argentine": [
+        "ARG",
+        "Argentin",
+        "Argentine",
+        "AR"
+    ],
+    "Argentin": [
+        "ARG",
+        "Argentin",
+        "Argentine",
+        "AR"
+    ],
+    "ARG": [
+        "ARG",
+        "Argentin",
+        "Argentine",
+        "AR"
+    ],
+    "AR": [
+        "ARG",
+        "Argentin",
+        "Argentine",
+        "AR"
+    ],
+    "Arménie": [
+        "ARM",
+        "Arménien",
+        "Arménie",
+        "AM"
+    ],
+    "Arménien": [
+        "ARM",
+        "Arménien",
+        "Arménie",
+        "AM"
+    ],
+    "ARM": [
+        "ARM",
+        "Arménien",
+        "Arménie",
+        "AM"
+    ],
+    "AM": [
+        "ARM",
+        "Arménien",
+        "Arménie",
+        "AM"
+    ],
+    "Autrichien": [
+        "AUT",
+        "Autrichien",
+        "Autriche",
+        "AT"
+    ],
+    "Autriche": [
+        "AUT",
+        "Autrichien",
+        "Autriche",
+        "AT"
+    ],
+    "AUT": [
+        "AUT",
+        "Autrichien",
+        "Autriche",
+        "AT"
+    ],
+    "AT": [
+        "AUT",
+        "Autrichien",
+        "Autriche",
+        "AT"
+    ],
+    "Australien": [
+        "AUS",
+        "Australien",
+        "Australie",
+        "AU"
+    ],
+    "Australie": [
+        "AUS",
+        "Australien",
+        "Australie",
+        "AU"
+    ],
+    "AUS": [
+        "AUS",
+        "Australien",
+        "Australie",
+        "AU"
+    ],
+    "AU": [
+        "AUS",
+        "Australien",
+        "Australie",
+        "AU"
+    ],
+    "Belge": [
+        "BEL",
+        "Belge",
+        "Belgique",
+        "BE"
+    ],
+    "Belgique": [
+        "BEL",
+        "Belge",
+        "Belgique",
+        "BE"
+    ],
+    "BEL": [
+        "BEL",
+        "Belge",
+        "Belgique",
+        "BE"
+    ],
+    "BE": [
+        "BEL",
+        "Belge",
+        "Belgique",
+        "BE"
+    ],
+    "Brésilien": [
+        "BRA",
+        "Brésilien",
+        "Brésil",
+        "BR"
+    ],
+    "Brésil": [
+        "BRA",
+        "Brésilien",
+        "Brésil",
+        "BR"
+    ],
+    "BRA": [
+        "BRA",
+        "Brésilien",
+        "Brésil",
+        "BR"
+    ],
+    "BR": [
+        "BRA",
+        "Brésilien",
+        "Brésil",
+        "BR"
+    ],
+    "Canadien": [
+        "CAN",
+        "Canadien",
+        "Canada",
+        "CA"
+    ],
+    "Canada": [
+        "CAN",
+        "Canadien",
+        "Canada",
+        "CA"
+    ],
+    "CAN": [
+        "CAN",
+        "Canadien",
+        "Canada",
+        "CA"
+    ],
+    "CA": [
+        "CAN",
+        "Canadien",
+        "Canada",
+        "CA"
+    ],
+    "Chilien": [
+        "CHL",
+        "Chilien",
+        "Chili",
+        "CL"
+    ],
+    "Chili": [
+        "CHL",
+        "Chilien",
+        "Chili",
+        "CL"
+    ],
+    "CHL": [
+        "CHL",
+        "Chilien",
+        "Chili",
+        "CL"
+    ],
+    "CL": [
+        "CHL",
+        "Chilien",
+        "Chili",
+        "CL"
+    ],
+    "République populaire de Chine": [
+        "CHN",
+        "Chine",
+        "République populaire de Chine",
+        "RPC",
+        "chinois",
+        "CN"
+    ],
+    "RPC": [
+        "CHN",
+        "Chine",
+        "République populaire de Chine",
+        "RPC",
+        "chinois",
+        "CN"
+    ],
+    "Chine": [
+        "CHN",
+        "Chine",
+        "République populaire de Chine",
+        "RPC",
+        "chinois",
+        "CN"
+    ],
+    "chinois": [
+        "CHN",
+        "Chine",
+        "République populaire de Chine",
+        "RPC",
+        "chinois",
+        "CN"
+    ],
+    "CHN": [
+        "CHN",
+        "Chine",
+        "République populaire de Chine",
+        "RPC",
+        "chinois",
+        "CN"
+    ],
+    "CN": [
+        "CHN",
+        "Chine",
+        "République populaire de Chine",
+        "RPC",
+        "chinois",
+        "CN"
+    ],
+    "Colombien": [
+        "COL",
+        "Colombien",
+        "Colombie",
+        "CO"
+    ],
+    "Colombie": [
+        "COL",
+        "Colombien",
+        "Colombie",
+        "CO"
+    ],
+    "COL": [
+        "COL",
+        "Colombien",
+        "Colombie",
+        "CO"
+    ],
+    "CO": [
+        "COL",
+        "Colombien",
+        "Colombie",
+        "CO"
+    ],
+    "Comores": [
+        "COM",
+        "Comorien",
+        "Comores",
+        "KM"
+    ],
+    "Comorien": [
+        "COM",
+        "Comorien",
+        "Comores",
+        "KM"
+    ],
+    "COM": [
+        "COM",
+        "Comorien",
+        "Comores",
+        "KM"
+    ],
+    "KM": [
+        "COM",
+        "Comorien",
+        "Comores",
+        "KM"
+    ],
+    "Cap Vert": [
+        "CPV",
+        "Cap Vert",
+        "CV"
+    ],
+    "CPV": [
+        "CPV",
+        "Cap Vert",
+        "CV"
+    ],
+    "CV": [
+        "CPV",
+        "Cap Vert",
+        "CV"
+    ],
+    "Costaricain": [
+        "CRI",
+        "Costaricain",
+        "Costa Rica",
+        "CR"
+    ],
+    "Costa Rica": [
+        "CRI",
+        "Costaricain",
+        "Costa Rica",
+        "CR"
+    ],
+    "CRI": [
+        "CRI",
+        "Costaricain",
+        "Costa Rica",
+        "CR"
+    ],
+    "CR": [
+        "CRI",
+        "Costaricain",
+        "Costa Rica",
+        "CR"
+    ],
+    "Tchèque": [
+        "CZE",
+        "Tchèque",
+        "République tchèque",
+        "Tchéquie",
+        "CZ"
+    ],
+    "République tchèque": [
+        "CZE",
+        "Tchèque",
+        "République tchèque",
+        "Tchéquie",
+        "CZ"
+    ],
+    "Tchéquie": [
+        "CZE",
+        "Tchèque",
+        "République tchèque",
+        "Tchéquie",
+        "CZ"
+    ],
+    "CZE": [
+        "CZE",
+        "Tchèque",
+        "République tchèque",
+        "Tchéquie",
+        "CZ"
+    ],
+    "CZ": [
+        "CZE",
+        "Tchèque",
+        "République tchèque",
+        "Tchéquie",
+        "CZ"
+    ],
+    "Cubain": [
+        "CUB",
+        "Cubain",
+        "Cuba",
+        "CU"
+    ],
+    "Cuba": [
+        "CUB",
+        "Cubain",
+        "Cuba",
+        "CU"
+    ],
+    "CUB": [
+        "CUB",
+        "Cubain",
+        "Cuba",
+        "CU"
+    ],
+    "CU": [
+        "CUB",
+        "Cubain",
+        "Cuba",
+        "CU"
+    ],
+    "Chyprien": [
+        "CYP",
+        "Chyprien",
+        "Chypriote",
+        "Chypre",
+        "CY"
+    ],
+    "Chypriote": [
+        "CYP",
+        "Chyprien",
+        "Chypriote",
+        "Chypre",
+        "CY"
+    ],
+    "Chypre": [
+        "CYP",
+        "Chyprien",
+        "Chypriote",
+        "Chypre",
+        "CY"
+    ],
+    "CYP": [
+        "CYP",
+        "Chyprien",
+        "Chypriote",
+        "Chypre",
+        "CY"
+    ],
+    "CY": [
+        "CYP",
+        "Chyprien",
+        "Chypriote",
+        "Chypre",
+        "CY"
+    ],
+    "Allemand": [
+        "DEU",
+        "Allemand",
+        "Allemagne",
+        "DE"
+    ],
+    "Allemagne": [
+        "DEU",
+        "Allemand",
+        "Allemagne",
+        "DE"
+    ],
+    "DEU": [
+        "DEU",
+        "Allemand",
+        "Allemagne",
+        "DE"
+    ],
+    "DE": [
+        "DEU",
+        "Allemand",
+        "Allemagne",
+        "DE"
+    ],
+    "Danois": [
+        "DNK",
+        "Danois",
+        "Danemark",
+        "DK"
+    ],
+    "Danemark": [
+        "DNK",
+        "Danois",
+        "Danemark",
+        "DK"
+    ],
+    "DNK": [
+        "DNK",
+        "Danois",
+        "Danemark",
+        "DK"
+    ],
+    "DK": [
+        "DNK",
+        "Danois",
+        "Danemark",
+        "DK"
+    ],
+    "République Dominicaine": [
+        "DOM",
+        "Dominicain",
+        "République Dominicaine",
+        "DO"
+    ],
+    "Dominicain": [
+        "DOM",
+        "Dominicain",
+        "République Dominicaine",
+        "DO"
+    ],
+    "DOM": [
+        "DOM",
+        "Dominicain",
+        "République Dominicaine",
+        "DO"
+    ],
+    "DO": [
+        "DOM",
+        "Dominicain",
+        "République Dominicaine",
+        "DO"
+    ],
+    "Algérie": [
+        "DZA",
+        "Algérien",
+        "Algérie",
+        "DZ"
+    ],
+    "Algérien": [
+        "DZA",
+        "Algérien",
+        "Algérie",
+        "DZ"
+    ],
+    "DZA": [
+        "DZA",
+        "Algérien",
+        "Algérie",
+        "DZ"
+    ],
+    "DZ": [
+        "DZA",
+        "Algérien",
+        "Algérie",
+        "DZ"
+    ],
+    "Équateur": [
+        "ECU",
+        "Équatorien",
+        "Équateur",
+        "EC"
+    ],
+    "Équatorien": [
+        "ECU",
+        "Équatorien",
+        "Équateur",
+        "EC"
+    ],
+    "ECU": [
+        "ECU",
+        "Équatorien",
+        "Équateur",
+        "EC"
+    ],
+    "EC": [
+        "ECU",
+        "Équatorien",
+        "Équateur",
+        "EC"
+    ],
+    "Égyptien": [
+        "EGY",
+        "Égyptien",
+        "Egypte",
+        "EG"
+    ],
+    "Égypte": [
+        "EGY",
+        "Égyptien",
+        "Egypte",
+        "EG"
+    ],
+    "EGY": [
+        "EGY",
+        "Égyptien",
+        "Egypte",
+        "EG"
+    ],
+    "EG": [
+        "EGY",
+        "Égyptien",
+        "Egypte",
+        "EG"
+    ],
+    "Espagnol": [
+        "ESP",
+        "Espagnol",
+        "Espagne",
+        "ES"
+    ],
+    "Espagne": [
+        "ESP",
+        "Espagnol",
+        "Espagne",
+        "ES"
+    ],
+    "ESP": [
+        "ESP",
+        "Espagnol",
+        "Espagne",
+        "ES"
+    ],
+    "ES": [
+        "ESP",
+        "Espagnol",
+        "Espagne",
+        "ES"
+    ],
+    "Estonien": [
+        "EST",
+        "Estonien",
+        "Estonie",
+        "EE"
+    ],
+    "Estonie": [
+        "EST",
+        "Estonien",
+        "Estonie",
+        "EE"
+    ],
+    "EST": [
+        "EST",
+        "Estonien",
+        "Estonie",
+        "EE"
+    ],
+    "EE": [
+        "EST",
+        "Estonien",
+        "Estonie",
+        "EE"
+    ],
+    "Éthiopie": [
+        "ETH",
+        "Éthiopien",
+        "Éthiopie",
+        "ET"
+    ],
+    "Éthiopien": [
+        "ETH",
+        "Éthiopien",
+        "Éthiopie",
+        "ET"
+    ],
+    "ETH": [
+        "ETH",
+        "Éthiopien",
+        "Éthiopie",
+        "ET"
+    ],
+    "ET": [
+        "ETH",
+        "Éthiopien",
+        "Éthiopie",
+        "ET"
+    ],
+    "Finlandais": [
+        "FIN",
+        "Finlandais",
+        "Finlande",
+        "FI"
+    ],
+    "Finlande": [
+        "FIN",
+        "Finlandais",
+        "Finlande",
+        "FI"
+    ],
+    "FIN": [
+        "FIN",
+        "Finlandais",
+        "Finlande",
+        "FI"
+    ],
+    "FI": [
+        "FIN",
+        "Finlandais",
+        "Finlande",
+        "FI"
+    ],
+    "France": [
+        "FRA",
+        "français",
+        "France",
+        "FR"
+    ],
+    "français": [
+        "FRA",
+        "français",
+        "France",
+        "FR"
+    ],
+    "FRA": [
+        "FRA",
+        "français",
+        "France",
+        "FR"
+    ],
+    "FR": [
+        "FRA",
+        "français",
+        "France",
+        "FR"
+    ],
+    "Britannique": [
+        "GBR",
+        "Britannique",
+        "Grande-Bretagne",
+        "Royaume-Uni",
+        "GB",
+        "UK"
+    ],
+    "Grande-Bretagne": [
+        "GBR",
+        "Britannique",
+        "Grande-Bretagne",
+        "Royaume-Uni",
+        "GB",
+        "UK"
+    ],
+    "Royaume-Uni": [
+        "GBR",
+        "Britannique",
+        "Grande-Bretagne",
+        "Royaume-Uni",
+        "GB",
+        "UK"
+    ],
+    "GBR": [
+        "GBR",
+        "Britannique",
+        "Grande-Bretagne",
+        "Royaume-Uni",
+        "GB",
+        "UK"
+    ],
+    "GB": [
+        "GBR",
+        "Britannique",
+        "Grande-Bretagne",
+        "Royaume-Uni",
+        "GB",
+        "UK"
+    ],
+    "UK": [
+        "GBR",
+        "Britannique",
+        "Grande-Bretagne",
+        "Royaume-Uni",
+        "GB",
+        "UK"
+    ],
+    "Guinée": [
+        "GIN",
+        "Guinéen",
+        "Guinée",
+        "GN"
+    ],
+    "Guinéen": [
+        "GIN",
+        "Guinéen",
+        "Guinée",
+        "GN"
+    ],
+    "GIN": [
+        "GIN",
+        "Guinéen",
+        "Guinée",
+        "GN"
+    ],
+    "GN": [
+        "GIN",
+        "Guinéen",
+        "Guinée",
+        "GN"
+    ],
+    "Grec": [
+        "GRC",
+        "Grec",
+        "Grèce",
+        "GR"
+    ],
+    "Grèce": [
+        "GRC",
+        "Grec",
+        "Grèce",
+        "GR"
+    ],
+    "GRC": [
+        "GRC",
+        "Grec",
+        "Grèce",
+        "GR"
+    ],
+    "GR": [
+        "GRC",
+        "Grec",
+        "Grèce",
+        "GR"
+    ],
+    "Hong Kong": [
+        "HKG",
+        "Hongkongais",
+        "Hong Kong",
+        "HK"
+    ],
+    "HongKong": [
+        "HKG",
+        "Hongkongais",
+        "Hong Kong",
+        "HK"
+    ],
+    "Hongkongais": [
+        "HKG",
+        "Hongkongais",
+        "Hong Kong",
+        "HK"
+    ],
+    "HKG": [
+        "HKG",
+        "Hongkongais",
+        "Hong Kong",
+        "HK"
+    ],
+    "HK": [
+        "HKG",
+        "Hongkongais",
+        "Hong Kong",
+        "HK"
+    ],
+    "Honduras": [
+        "HND",
+        "Honduras",
+        "HN"
+    ],
+    "HND": [
+        "HND",
+        "Honduras",
+        "HN"
+    ],
+    "HN": [
+        "HND",
+        "Honduras",
+        "HN"
+    ],
+    "Haïtien": [
+        "HTI",
+        "Haïtien",
+        "Haïti",
+        "HT"
+    ],
+    "Haïti": [
+        "HTI",
+        "Haïtien",
+        "Haïti",
+        "HT"
+    ],
+    "HTI": [
+        "HTI",
+        "Haïtien",
+        "Haïti",
+        "HT"
+    ],
+    "HT": [
+        "HTI",
+        "Haïtien",
+        "Haïti",
+        "HT"
+    ],
+    "Hongrois": [
+        "HUN",
+        "Hongrois",
+        "Hongrie",
+        "HU"
+    ],
+    "Hongrie": [
+        "HUN",
+        "Hongrois",
+        "Hongrie",
+        "HU"
+    ],
+    "HUN": [
+        "HUN",
+        "Hongrois",
+        "Hongrie",
+        "HU"
+    ],
+    "HU": [
+        "HUN",
+        "Hongrois",
+        "Hongrie",
+        "HU"
+    ],
+    "Indonésien": [
+        "IDN",
+        "Indonésien",
+        "Indonésie",
+        "ID"
+    ],
+    "Indonésie": [
+        "IDN",
+        "Indonésien",
+        "Indonésie",
+        "ID"
+    ],
+    "IDN": [
+        "IDN",
+        "Indonésien",
+        "Indonésie",
+        "ID"
+    ],
+    "ID": [
+        "IDN",
+        "Indonésien",
+        "Indonésie",
+        "ID"
+    ],
+    "Indien": [
+        "IND",
+        "Indien",
+        "Inde",
+        "IN"
+    ],
+    "Inde": [
+        "IND",
+        "Indien",
+        "Inde",
+        "IN"
+    ],
+    "IND": [
+        "IND",
+        "Indien",
+        "Inde",
+        "IN"
+    ],
+    "IN": [
+        "IND",
+        "Indien",
+        "Inde",
+        "IN"
+    ],
+    "Irlandais": [
+        "IRL",
+        "Irlandais",
+        "Irlande",
+        "IE"
+    ],
+    "Irlande": [
+        "IRL",
+        "Irlandais",
+        "Irlande",
+        "IE"
+    ],
+    "IRL": [
+        "IRL",
+        "Irlandais",
+        "Irlande",
+        "IE"
+    ],
+    "IE": [
+        "IRL",
+        "Irlandais",
+        "Irlande",
+        "IE"
+    ],
+    "Iranien": [
+        "IRN",
+        "Iranien",
+        "Persan",
+        "Iran",
+        "IR"
+    ],
+    "Persan": [
+        "IRN",
+        "Iranien",
+        "Persan",
+        "Iran",
+        "IR"
+    ],
+    "Iran": [
+        "IRN",
+        "Iranien",
+        "Persan",
+        "Iran",
+        "IR"
+    ],
+    "IRN": [
+        "IRN",
+        "Iranien",
+        "Persan",
+        "Iran",
+        "IR"
+    ],
+    "IR": [
+        "IRN",
+        "Iranien",
+        "Persan",
+        "Iran",
+        "IR"
+    ],
+    "Irakien": [
+        "IRQ",
+        "Irakien",
+        "Irak",
+        "IQ"
+    ],
+    "Irak": [
+        "IRQ",
+        "Irakien",
+        "Irak",
+        "IQ"
+    ],
+    "IRQ": [
+        "IRQ",
+        "Irakien",
+        "Irak",
+        "IQ"
+    ],
+    "IQ": [
+        "IRQ",
+        "Irakien",
+        "Irak",
+        "IQ"
+    ],
+    "Islandais": [
+        "ISL",
+        "Islandais",
+        "Islande",
+        "IS"
+    ],
+    "Islande": [
+        "ISL",
+        "Islandais",
+        "Islande",
+        "IS"
+    ],
+    "ISL": [
+        "ISL",
+        "Islandais",
+        "Islande",
+        "IS"
+    ],
+    "IS": [
+        "ISL",
+        "Islandais",
+        "Islande",
+        "IS"
+    ],
+    "Israélien": [
+        "ISR",
+        "Israélien",
+        "Israël",
+        "IL"
+    ],
+    "Israël": [
+        "ISR",
+        "Israélien",
+        "Israël",
+        "IL"
+    ],
+    "ISR": [
+        "ISR",
+        "Israélien",
+        "Israël",
+        "IL"
+    ],
+    "IL": [
+        "ISR",
+        "Israélien",
+        "Israël",
+        "IL"
+    ],
+    "Italien": [
+        "ITA",
+        "Italien",
+        "Italie",
+        "IT"
+    ],
+    "Italie": [
+        "ITA",
+        "Italien",
+        "Italie",
+        "IT"
+    ],
+    "ITA": [
+        "ITA",
+        "Italien",
+        "Italie",
+        "IT"
+    ],
+    "IT": [
+        "ITA",
+        "Italien",
+        "Italie",
+        "IT"
+    ],
+    "Jordanien": [
+        "JOR",
+        "Jordanien",
+        "Jordanie",
+        "JO"
+    ],
+    "Jordanie": [
+        "JOR",
+        "Jordanien",
+        "Jordanie",
+        "JO"
+    ],
+    "JOR": [
+        "JOR",
+        "Jordanien",
+        "Jordanie",
+        "JO"
+    ],
+    "JO": [
+        "JOR",
+        "Jordanien",
+        "Jordanie",
+        "JO"
+    ],
+    "Japonais": [
+        "JPN",
+        "Japonais",
+        "Japon",
+        "JP"
+    ],
+    "Japon": [
+        "JPN",
+        "Japonais",
+        "Japon",
+        "JP"
+    ],
+    "JPN": [
+        "JPN",
+        "Japonais",
+        "Japon",
+        "JP"
+    ],
+    "JP": [
+        "JPN",
+        "Japonais",
+        "Japon",
+        "JP"
+    ],
+    "Kazakh": [
+        "KAZ",
+        "Kazakh",
+        "Kazakhstan",
+        "KZ"
+    ],
+    "Kazakhstan": [
+        "KAZ",
+        "Kazakh",
+        "Kazakhstan",
+        "KZ"
+    ],
+    "KAZ": [
+        "KAZ",
+        "Kazakh",
+        "Kazakhstan",
+        "KZ"
+    ],
+    "KZ": [
+        "KAZ",
+        "Kazakh",
+        "Kazakhstan",
+        "KZ"
+    ],
+    "Kényan": [
+        "KEN",
+        "Kényan",
+        "Kenya",
+        "KE"
+    ],
+    "Kenya": [
+        "KEN",
+        "Kényan",
+        "Kenya",
+        "KE"
+    ],
+    "KEN": [
+        "KEN",
+        "Kényan",
+        "Kenya",
+        "KE"
+    ],
+    "KE": [
+        "KEN",
+        "Kényan",
+        "Kenya",
+        "KE"
+    ],
+    "Corée du Sud": [
+        "KOR",
+        "Coréen",
+        "Corée",
+        "Corée du Sud",
+        "KR"
+    ],
+    "Corée": [
+        "KOR",
+        "Coréen",
+        "Corée",
+        "Corée du Sud",
+        "KR"
+    ],
+    "Coréen": [
+        "KOR",
+        "Coréen",
+        "Corée",
+        "Corée du Sud",
+        "KR"
+    ],
+    "KOR": [
+        "KOR",
+        "Coréen",
+        "Corée",
+        "Corée du Sud",
+        "KR"
+    ],
+    "KR": [
+        "KOR",
+        "Coréen",
+        "Corée",
+        "Corée du Sud",
+        "KR"
+    ],
+    "Koweït": [
+        "KWT",
+        "Koweïtien",
+        "Koweït",
+        "KW"
+    ],
+    "Koweïtien": [
+        "KWT",
+        "Koweïtien",
+        "Koweït",
+        "KW"
+    ],
+    "KWT": [
+        "KWT",
+        "Koweïtien",
+        "Koweït",
+        "KW"
+    ],
+    "KW": [
+        "KWT",
+        "Koweïtien",
+        "Koweït",
+        "KW"
+    ],
+    "Libanais": [
+        "LBN",
+        "Libanais",
+        "Liban",
+        "LB"
+    ],
+    "Liban": [
+        "LBN",
+        "Libanais",
+        "Liban",
+        "LB"
+    ],
+    "LBN": [
+        "LBN",
+        "Libanais",
+        "Liban",
+        "LB"
+    ],
+    "LB": [
+        "LBN",
+        "Libanais",
+        "Liban",
+        "LB"
+    ],
+    "Libérien": [
+        "LBR",
+        "Libérien",
+        "Libéria",
+        "LR"
+    ],
+    "Libéria": [
+        "LBR",
+        "Libérien",
+        "Libéria",
+        "LR"
+    ],
+    "LBR": [
+        "LBR",
+        "Libérien",
+        "Libéria",
+        "LR"
+    ],
+    "LR": [
+        "LBR",
+        "Libérien",
+        "Libéria",
+        "LR"
+    ],
+    "libyen": [
+        "LBY",
+        "libyen",
+        "Libye",
+        "LY"
+    ],
+    "Libye": [
+        "LBY",
+        "libyen",
+        "Libye",
+        "LY"
+    ],
+    "LBY": [
+        "LBY",
+        "libyen",
+        "Libye",
+        "LY"
+    ],
+    "LY": [
+        "LBY",
+        "libyen",
+        "Libye",
+        "LY"
+    ],
+    "Luxembourgeois": [
+        "LUX",
+        "Luxembourgeois",
+        "Luxembourg",
+        "LU"
+    ],
+    "Luxembourg": [
+        "LUX",
+        "Luxembourgeois",
+        "Luxembourg",
+        "LU"
+    ],
+    "LUX": [
+        "LUX",
+        "Luxembourgeois",
+        "Luxembourg",
+        "LU"
+    ],
+    "LU": [
+        "LUX",
+        "Luxembourgeois",
+        "Luxembourg",
+        "LU"
+    ],
+    "Letton": [
+        "LVA",
+        "Letton",
+        "Lettonie",
+        "LV"
+    ],
+    "Lettonie": [
+        "LVA",
+        "Letton",
+        "Lettonie",
+        "LV"
+    ],
+    "LVA": [
+        "LVA",
+        "Letton",
+        "Lettonie",
+        "LV"
+    ],
+    "LV": [
+        "LVA",
+        "Letton",
+        "Lettonie",
+        "LV"
+    ],
+    "Marocain": [
+        "MAR",
+        "Marocain",
+        "Maroc",
+        "MA"
+    ],
+    "Maroc": [
+        "MAR",
+        "Marocain",
+        "Maroc",
+        "MA"
+    ],
+    "MAR": [
+        "MAR",
+        "Marocain",
+        "Maroc",
+        "MA"
+    ],
+    "MA": [
+        "MAR",
+        "Marocain",
+        "Maroc",
+        "MA"
+    ],
+    "Monégasque": [
+        "MCO",
+        "Monégasque",
+        "Monaco",
+        "MC"
+    ],
+    "Monaco": [
+        "MCO",
+        "Monégasque",
+        "Monaco",
+        "MC"
+    ],
+    "MCO": [
+        "MCO",
+        "Monégasque",
+        "Monaco",
+        "MC"
+    ],
+    "MC": [
+        "MCO",
+        "Monégasque",
+        "Monaco",
+        "MC"
+    ],
+    "Mexicain": [
+        "MEX",
+        "Mexicain",
+        "Mexique",
+        "MX"
+    ],
+    "Mexique": [
+        "MEX",
+        "Mexicain",
+        "Mexique",
+        "MX"
+    ],
+    "MEX": [
+        "MEX",
+        "Mexicain",
+        "Mexique",
+        "MX"
+    ],
+    "MX": [
+        "MEX",
+        "Mexicain",
+        "Mexique",
+        "MX"
+    ],
+    "Mongolien": [
+        "MNG",
+        "Mongolien",
+        "Mongolie",
+        "MN"
+    ],
+    "Mongolie": [
+        "MNG",
+        "Mongolien",
+        "Mongolie",
+        "MN"
+    ],
+    "MNG": [
+        "MNG",
+        "Mongolien",
+        "Mongolie",
+        "MN"
+    ],
+    "MN": [
+        "MNG",
+        "Mongolien",
+        "Mongolie",
+        "MN"
+    ],
+    "Malaisien": [
+        "MYS",
+        "Malaisien",
+        "Malaisie",
+        "MY"
+    ],
+    "Malaisie": [
+        "MYS",
+        "Malaisien",
+        "Malaisie",
+        "MY"
+    ],
+    "MYS": [
+        "MYS",
+        "Malaisien",
+        "Malaisie",
+        "MY"
+    ],
+    "MY": [
+        "MYS",
+        "Malaisien",
+        "Malaisie",
+        "MY"
+    ],
+    "Néerlandais": [
+        "NLD",
+        "Néerlandais",
+        "Pays-Bas",
+        "NL"
+    ],
+    "Pays-Bas": [
+        "NLD",
+        "Néerlandais",
+        "Pays-Bas",
+        "NL"
+    ],
+    "NLD": [
+        "NLD",
+        "Néerlandais",
+        "Pays-Bas",
+        "NL"
+    ],
+    "NL": [
+        "NLD",
+        "Néerlandais",
+        "Pays-Bas",
+        "NL"
+    ],
+    "Norvégien": [
+        "NOR",
+        "Norvégien",
+        "Norvège",
+        "NO"
+    ],
+    "Norvège": [
+        "NOR",
+        "Norvégien",
+        "Norvège",
+        "NO"
+    ],
+    "NOR": [
+        "NOR",
+        "Norvégien",
+        "Norvège",
+        "NO"
+    ],
+    "NO": [
+        "NOR",
+        "Norvégien",
+        "Norvège",
+        "NO"
+    ],
+    "Calédonien": [
+        "NCL",
+        "Calédonien",
+        "Nouvelle-Calédonie",
+        "NC"
+    ],
+    "Nouvelle-Calédonie": [
+        "NCL",
+        "Calédonien",
+        "Nouvelle-Calédonie",
+        "NC"
+    ],
+    "NCL": [
+        "NCL",
+        "Calédonien",
+        "Nouvelle-Calédonie",
+        "NC"
+    ],
+    "NC": [
+        "NCL",
+        "Calédonien",
+        "Nouvelle-Calédonie",
+        "NC"
+    ],
+    "Népal": [
+        "NPL",
+        "Népalais",
+        "Népal",
+        "NP"
+    ],
+    "Népalais": [
+        "NPL",
+        "Népalais",
+        "Népal",
+        "NP"
+    ],
+    "NPL": [
+        "NPL",
+        "Népalais",
+        "Népal",
+        "NP"
+    ],
+    "NP": [
+        "NPL",
+        "Népalais",
+        "Népal",
+        "NP"
+    ],
+    "Néo-Zélandais": [
+        "NZL",
+        "Néo-Zélandais",
+        "Nouvelle-Zélande",
+        "NZ"
+    ],
+    "Nouvelle-Zélande": [
+        "NZL",
+        "Néo-Zélandais",
+        "Nouvelle-Zélande",
+        "NZ"
+    ],
+    "NZL": [
+        "NZL",
+        "Néo-Zélandais",
+        "Nouvelle-Zélande",
+        "NZ"
+    ],
+    "NZ": [
+        "NZL",
+        "Néo-Zélandais",
+        "Nouvelle-Zélande",
+        "NZ"
+    ],
+    "Nigérian": [
+        "NGA",
+        "Nigérian",
+        "Nigéria",
+        "NG"
+    ],
+    "Nigéria": [
+        "NGA",
+        "Nigérian",
+        "Nigéria",
+        "NG"
+    ],
+    "NGA": [
+        "NGA",
+        "Nigérian",
+        "Nigéria",
+        "NG"
+    ],
+    "NG": [
+        "NGA",
+        "Nigérian",
+        "Nigéria",
+        "NG"
+    ],
+    "Pakistanais": [
+        "PAK",
+        "Pakistanais",
+        "Pakistan",
+        "PK"
+    ],
+    "Pakistan": [
+        "PAK",
+        "Pakistanais",
+        "Pakistan",
+        "PK"
+    ],
+    "PAK": [
+        "PAK",
+        "Pakistanais",
+        "Pakistan",
+        "PK"
+    ],
+    "PK": [
+        "PAK",
+        "Pakistanais",
+        "Pakistan",
+        "PK"
+    ],
+    "Panama": [
+        "PAN",
+        "Panaméen",
+        "Panama",
+        "PA"
+    ],
+    "Panaméen": [
+        "PAN",
+        "Panaméen",
+        "Panama",
+        "PA"
+    ],
+    "PAN": [
+        "PAN",
+        "Panaméen",
+        "Panama",
+        "PA"
+    ],
+    "PA": [
+        "PAN",
+        "Panaméen",
+        "Panama",
+        "PA"
+    ],
+    "Palestinien": [
+        "PSE",
+        "Palestinien",
+        "Palestine",
+        "Territoires occupés",
+        "PS"
+    ],
+    "Palestine": [
+        "PSE",
+        "Palestinien",
+        "Palestine",
+        "Territoires occupés",
+        "PS"
+    ],
+    "Territoires occupés": [
+        "PSE",
+        "Palestinien",
+        "Palestine",
+        "Territoires occupés",
+        "PS"
+    ],
+    "PSE": [
+        "PSE",
+        "Palestinien",
+        "Palestine",
+        "Territoires occupés",
+        "PS"
+    ],
+    "PS": [
+        "PSE",
+        "Palestinien",
+        "Palestine",
+        "Territoires occupés",
+        "PS"
+    ],
+    "Philippin": [
+        "PHL",
+        "Philippin",
+        "Philippines",
+        "PH"
+    ],
+    "Philippines": [
+        "PHL",
+        "Philippin",
+        "Philippines",
+        "PH"
+    ],
+    "PHL": [
+        "PHL",
+        "Philippin",
+        "Philippines",
+        "PH"
+    ],
+    "PH": [
+        "PHL",
+        "Philippin",
+        "Philippines",
+        "PH"
+    ],
+    "Pérou": [
+        "PER",
+        "Péruvien",
+        "Pérou",
+        "PE"
+    ],
+    "Péruvien": [
+        "PER",
+        "Péruvien",
+        "Pérou",
+        "PE"
+    ],
+    "PER": [
+        "PER",
+        "Péruvien",
+        "Pérou",
+        "PE"
+    ],
+    "PE": [
+        "PER",
+        "Péruvien",
+        "Pérou",
+        "PE"
+    ],
+    "Polonais": [
+        "POL",
+        "Polonais",
+        "Pologne",
+        "PL"
+    ],
+    "Pologne": [
+        "POL",
+        "Polonais",
+        "Pologne",
+        "PL"
+    ],
+    "POL": [
+        "POL",
+        "Polonais",
+        "Pologne",
+        "PL"
+    ],
+    "PL": [
+        "POL",
+        "Polonais",
+        "Pologne",
+        "PL"
+    ],
+    "Porto Rico": [
+        "PRI",
+        "Portoricain",
+        "Porto Rico",
+        "PR"
+    ],
+    "Portoricain": [
+        "PRI",
+        "Portoricain",
+        "Porto Rico",
+        "PR"
+    ],
+    "PRI": [
+        "PRI",
+        "Portoricain",
+        "Porto Rico",
+        "PR"
+    ],
+    "PR": [
+        "PRI",
+        "Portoricain",
+        "Porto Rico",
+        "PR"
+    ],
+    "Portugais": [
+        "PRT",
+        "Portugais",
+        "Portugal",
+        "PT"
+    ],
+    "Portugal": [
+        "PRT",
+        "Portugais",
+        "Portugal",
+        "PT"
+    ],
+    "PRT": [
+        "PRT",
+        "Portugais",
+        "Portugal",
+        "PT"
+    ],
+    "PT": [
+        "PRT",
+        "Portugais",
+        "Portugal",
+        "PT"
+    ],
+    "Qatari": [
+        "QAT",
+        "Qatari",
+        "Qatar",
+        "QA"
+    ],
+    "Qatar": [
+        "QAT",
+        "Qatari",
+        "Qatar",
+        "QA"
+    ],
+    "QAT": [
+        "QAT",
+        "Qatari",
+        "Qatar",
+        "QA"
+    ],
+    "QA": [
+        "QAT",
+        "Qatari",
+        "Qatar",
+        "QA"
+    ],
+    "Roumain": [
+        "ROU",
+        "Roumain",
+        "Roumanie",
+        "RO"
+    ],
+    "Roumanie": [
+        "ROU",
+        "Roumain",
+        "Roumanie",
+        "RO"
+    ],
+    "ROU": [
+        "ROU",
+        "Roumain",
+        "Roumanie",
+        "RO"
+    ],
+    "RO": [
+        "ROU",
+        "Roumain",
+        "Roumanie",
+        "RO"
+    ],
+    "Russe": [
+        "RUS",
+        "Russe",
+        "Russie",
+        "RU"
+    ],
+    "Russie": [
+        "RUS",
+        "Russe",
+        "Russie",
+        "RU"
+    ],
+    "RUS": [
+        "RUS",
+        "Russe",
+        "Russie",
+        "RU"
+    ],
+    "RU": [
+        "RUS",
+        "Russe",
+        "Russie",
+        "RU"
+    ],
+    "Rwandais": [
+        "RWA",
+        "Rwandais",
+        "Rwanda",
+        "RW"
+    ],
+    "Rwanda": [
+        "RWA",
+        "Rwandais",
+        "Rwanda",
+        "RW"
+    ],
+    "RWA": [
+        "RWA",
+        "Rwandais",
+        "Rwanda",
+        "RW"
+    ],
+    "RW": [
+        "RWA",
+        "Rwandais",
+        "Rwanda",
+        "RW"
+    ],
+    "Saoudien": [
+        "SAU",
+        "Saoudien",
+        "Arabie Saoudite",
+        "SA"
+    ],
+    "Arabie Saoudite": [
+        "SAU",
+        "Saoudien",
+        "Arabie Saoudite",
+        "SA"
+    ],
+    "SAU": [
+        "SAU",
+        "Saoudien",
+        "Arabie Saoudite",
+        "SA"
+    ],
+    "SA": [
+        "SAU",
+        "Saoudien",
+        "Arabie Saoudite",
+        "SA"
+    ],
+    "Écossais": [
+        "Écossais",
+        "Écosse"
+    ],
+    "Écosse": [
+        "Écossais",
+        "Écosse"
+    ],
+    "Sierra-Léonais": [
+        "SLE",
+        "Sierra-Léonais",
+        "Sierra Leone",
+        "SL"
+    ],
+    "Sierra Leone": [
+        "SLE",
+        "Sierra-Léonais",
+        "Sierra Leone",
+        "SL"
+    ],
+    "SLE": [
+        "SLE",
+        "Sierra-Léonais",
+        "Sierra Leone",
+        "SL"
+    ],
+    "SL": [
+        "SLE",
+        "Sierra-Léonais",
+        "Sierra Leone",
+        "SL"
+    ],
+    "Singapourien": [
+        "SGP",
+        "Singapourien",
+        "Singapour",
+        "SG"
+    ],
+    "Singapour": [
+        "SGP",
+        "Singapourien",
+        "Singapour",
+        "SG"
+    ],
+    "SGP": [
+        "SGP",
+        "Singapourien",
+        "Singapour",
+        "SG"
+    ],
+    "SG": [
+        "SGP",
+        "Singapourien",
+        "Singapour",
+        "SG"
+    ],
+    "Slovaque": [
+        "SVK",
+        "Slovaque",
+        "Slovaquie",
+        "République slovaque",
+        "SK"
+    ],
+    "Slovaquie": [
+        "SVK",
+        "Slovaque",
+        "Slovaquie",
+        "République slovaque",
+        "SK"
+    ],
+    "République slovaque": [
+        "SVK",
+        "Slovaque",
+        "Slovaquie",
+        "République slovaque",
+        "SK"
+    ],
+    "SVK": [
+        "SVK",
+        "Slovaque",
+        "Slovaquie",
+        "République slovaque",
+        "SK"
+    ],
+    "SK": [
+        "SVK",
+        "Slovaque",
+        "Slovaquie",
+        "République slovaque",
+        "SK"
+    ],
+    "Slovène": [
+        "SVN",
+        "Slovène",
+        "Slovénie",
+        "SI"
+    ],
+    "Slovénie": [
+        "SVN",
+        "Slovène",
+        "Slovénie",
+        "SI"
+    ],
+    "SVN": [
+        "SVN",
+        "Slovène",
+        "Slovénie",
+        "SI"
+    ],
+    "SI": [
+        "SVN",
+        "Slovène",
+        "Slovénie",
+        "SI"
+    ],
+    "Suédois": [
+        "SWE",
+        "Suédois",
+        "Suède",
+        "SE"
+    ],
+    "Suède": [
+        "SWE",
+        "Suédois",
+        "Suède",
+        "SE"
+    ],
+    "SWE": [
+        "SWE",
+        "Suédois",
+        "Suède",
+        "SE"
+    ],
+    "SE": [
+        "SWE",
+        "Suédois",
+        "Suède",
+        "SE"
+    ],
+    "Suisse": [
+        "CHE",
+        "Suisse",
+        "CH"
+    ],
+    "CHE": [
+        "CHE",
+        "Suisse",
+        "CH"
+    ],
+    "CH": [
+        "CHE",
+        "Suisse",
+        "CH"
+    ],
+    "Syrien": [
+        "SYR",
+        "Syrien",
+        "Syrie",
+        "SY"
+    ],
+    "Syrie": [
+        "SYR",
+        "Syrien",
+        "Syrie",
+        "SY"
+    ],
+    "SYR": [
+        "SYR",
+        "Syrien",
+        "Syrie",
+        "SY"
+    ],
+    "SY": [
+        "SYR",
+        "Syrien",
+        "Syrie",
+        "SY"
+    ],
+    "Taipei chinois": [
+        "TWN",
+        "Taïwanais",
+        "Taipei chinois",
+        "TW"
+    ],
+    "Taïwanais": [
+        "TWN",
+        "Taïwanais",
+        "Taipei chinois",
+        "TW"
+    ],
+    "TWN": [
+        "TWN",
+        "Taïwanais",
+        "Taipei chinois",
+        "TW"
+    ],
+    "TW": [
+        "TWN",
+        "Taïwanais",
+        "Taipei chinois",
+        "TW"
+    ],
+    "Thaï": [
+        "THA",
+        "Thaï",
+        "Thaïlande",
+        "TH"
+    ],
+    "Thaïlande": [
+        "THA",
+        "Thaï",
+        "Thaïlande",
+        "TH"
+    ],
+    "THA": [
+        "THA",
+        "Thaï",
+        "Thaïlande",
+        "TH"
+    ],
+    "TH": [
+        "THA",
+        "Thaï",
+        "Thaïlande",
+        "TH"
+    ],
+    "Tunisien": [
+        "TUN",
+        "Tunisien",
+        "Tunisie",
+        "TN"
+    ],
+    "Tunisie": [
+        "TUN",
+        "Tunisien",
+        "Tunisie",
+        "TN"
+    ],
+    "TUN": [
+        "TUN",
+        "Tunisien",
+        "Tunisie",
+        "TN"
+    ],
+    "TN": [
+        "TUN",
+        "Tunisien",
+        "Tunisie",
+        "TN"
+    ],
+    "Turc": [
+        "TUR",
+        "Turc",
+        "Turque",
+        "Türkiye",
+        "Turquie",
+        "TR"
+    ],
+    "Turque": [
+        "TUR",
+        "Turc",
+        "Turque",
+        "Türkiye",
+        "Turquie",
+        "TR"
+    ],
+    "Türkiye": [
+        "TUR",
+        "Turc",
+        "Turque",
+        "Türkiye",
+        "Turquie",
+        "TR"
+    ],
+    "Turquie": [
+        "TUR",
+        "Turc",
+        "Turque",
+        "Türkiye",
+        "Turquie",
+        "TR"
+    ],
+    "TUR": [
+        "TUR",
+        "Turc",
+        "Turque",
+        "Türkiye",
+        "Turquie",
+        "TR"
+    ],
+    "TR": [
+        "TUR",
+        "Turc",
+        "Turque",
+        "Türkiye",
+        "Turquie",
+        "TR"
+    ],
+    "Ukrainien": [
+        "UKR",
+        "Ukrainien",
+        "Ukraine",
+        "UA"
+    ],
+    "Ukraine": [
+        "UKR",
+        "Ukrainien",
+        "Ukraine",
+        "UA"
+    ],
+    "UKR": [
+        "UKR",
+        "Ukrainien",
+        "Ukraine",
+        "UA"
+    ],
+    "UA": [
+        "UKR",
+        "Ukrainien",
+        "Ukraine",
+        "UA"
+    ],
+    "américain": [
+        "USA",
+        "américain",
+        "États-Unis",
+        "US"
+    ],
+    "États-Unis": [
+        "USA",
+        "américain",
+        "États-Unis",
+        "US"
+    ],
+    "USA": [
+        "USA",
+        "américain",
+        "États-Unis",
+        "US"
+    ],
+    "US": [
+        "USA",
+        "américain",
+        "États-Unis",
+        "US"
+    ],
+    "Vénézuela": [
+        "VEN",
+        "Vénézuélien",
+        "Vénézuela",
+        "VE"
+    ],
+    "Vénézuélien": [
+        "VEN",
+        "Vénézuélien",
+        "Vénézuela",
+        "VE"
+    ],
+    "VEN": [
+        "VEN",
+        "Vénézuélien",
+        "Vénézuela",
+        "VE"
+    ],
+    "VE": [
+        "VEN",
+        "Vénézuélien",
+        "Vénézuela",
+        "VE"
+    ],
+    "Iles Vierges des États-Unis": [
+        "VIR",
+        "Iles Vierges des États-Unis",
+        "VI"
+    ],
+    "VIR": [
+        "VIR",
+        "Iles Vierges des États-Unis",
+        "VI"
+    ],
+    "VI": [
+        "VIR",
+        "Iles Vierges des États-Unis",
+        "VI"
+    ],
+    "Vietnam": [
+        "VNM",
+        "Vietnamien",
+        "Vietnam",
+        "VN"
+    ],
+    "Vietnamien": [
+        "VNM",
+        "Vietnamien",
+        "Vietnam",
+        "VN"
+    ],
+    "VNM": [
+        "VNM",
+        "Vietnamien",
+        "Vietnam",
+        "VN"
+    ],
+    "VN": [
+        "VNM",
+        "Vietnamien",
+        "Vietnam",
+        "VN"
+    ],
+    "Afrique du Sud": [
+        "ZAF",
+        "sud africain",
+        "sud-africain",
+        "sudafricain",
+        "Afrique du Sud",
+        "ZA"
+    ],
+    "sud africain": [
+        "ZAF",
+        "sud africain",
+        "sud-africain",
+        "sudafricain",
+        "Afrique du Sud",
+        "ZA"
+    ],
+    "sud-africain": [
+        "ZAF",
+        "sud africain",
+        "sud-africain",
+        "sudafricain",
+        "Afrique du Sud",
+        "ZA"
+    ],
+    "sudafricain": [
+        "ZAF",
+        "sud africain",
+        "sud-africain",
+        "sudafricain",
+        "Afrique du Sud",
+        "ZA"
+    ],
+    "ZAF": [
+        "ZAF",
+        "sud africain",
+        "sud-africain",
+        "sudafricain",
+        "Afrique du Sud",
+        "ZA"
+    ],
+    "ZA": [
+        "ZAF",
+        "sud africain",
+        "sud-africain",
+        "sudafricain",
+        "Afrique du Sud",
+        "ZA"
+    ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+    <message:Header>
+        <message:ID>DUMMY_AGENCY_SCHEME</message:ID>
+        <message:Test>false</message:Test>
+        <message:Prepared>2025-11-19T00:00:00Z</message:Prepared>
+        <message:Sender id="OECD"/>
+    </message:Header>
+    <message:Structures>
+        <structure:OrganisationSchemes>
+            <structure:AgencyScheme id="AGENCY_SCHEME" agencyID="OECD" version="1.0">
+                <common:Name xml:lang="en">Agency Scheme</common:Name>
+                <structure:Agency id="OECD">
+                    <common:Name xml:lang="en">OECD</common:Name>
+                </structure:Agency>
+            </structure:AgencyScheme>
+        </structure:OrganisationSchemes>
+    </message:Structures>
+</message:Structure>

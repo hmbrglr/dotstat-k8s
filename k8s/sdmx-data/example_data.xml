@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message:GenericData xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+    xmlns:generic="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/generic"
+    xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+>
+    <message:Header>
+        <message:ID>ExampleDataHeader</message:ID>
+        <message:Test>false</message:Test>
+        <message:Prepared>2025-07-26T19:44:06Z</message:Prepared>
+        <message:Sender id="EXAMPLE_ORG" />
+        <message:Structure>
+            <Ref id="DFD_EXAMPLE" agencyID="EXAMPLE" version="1.0" class="Dataflow"
+                package="dataflow" />
+        </message:Structure>
+    </message:Header>
+    <message:DataSet action="Replace" structureRef="DFD_EXAMPLE">
+        <generic:Series>
+            <generic:SeriesKey>
+                <generic:Value id="FREQ" value="Q" />
+                <generic:Value id="COUNTRY" value="US" />
+                <generic:Value id="UNIT_MEASURE" value="USD" />
+            </generic:SeriesKey>
+            <generic:Obs>
+                <generic:ObsDimension value="2024-Q4" />
+                <generic:ObsValue value="23000" />
+            </generic:Obs>
+            <generic:Obs>
+                <generic:ObsDimension value="2025-Q1" />
+                <generic:ObsValue value="23500" />
+            </generic:Obs>
+        </generic:Series>
+        <generic:Series>
+            <generic:SeriesKey>
+                <generic:Value id="FREQ" value="Q" />
+                <generic:Value id="COUNTRY" value="FR" />
+                <generic:Value id="UNIT_MEASURE" value="EUR" />
+            </generic:SeriesKey>
+            <generic:Obs>
+                <generic:ObsDimension value="2024-Q4" />
+                <generic:ObsValue value="15000" />
+            </generic:Obs>
+            <generic:Obs>
+                <generic:ObsDimension value="2025-Q1" />
+                <generic:ObsValue value="15200" />
+            </generic:Obs>
+        </generic:Series>
+        <generic:Series>
+            <generic:SeriesKey>
+                <generic:Value id="FREQ" value="Q" />
+                <generic:Value id="COUNTRY" value="DE" />
+                <generic:Value id="UNIT_MEASURE" value="EUR" />
+            </generic:SeriesKey>
+            <generic:Obs>
+                <generic:ObsDimension value="2024-Q4" />
+                <generic:ObsValue value="18000" />
+            </generic:Obs>
+            <generic:Obs>
+                <generic:ObsDimension value="2025-Q1" />
+                <generic:ObsValue value="18300" />
+            </generic:Obs>
+        </generic:Series>
+    </message:DataSet>
+</message:GenericData>

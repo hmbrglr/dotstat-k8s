@@ -1,0 +1,22 @@
+{
+  "fields": {
+    "dataflowId": {
+      "weight": 16
+    },
+    "name": {
+      "weight": 12
+    },
+    "dimensions": {
+      "weight": 8
+    },
+    "description": {
+      "weight": 4
+    },
+    "agencyId": {
+      "weight": 0.2
+    },
+    "version": {
+      "weight": 0.1
+    }
+  }
+}

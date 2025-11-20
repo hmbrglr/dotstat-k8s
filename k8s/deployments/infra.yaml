@@ -1,0 +1,263 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sqlserver
+  namespace: dotstat
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: sqlserver } }
+  template:
+    metadata:
+      labels: { app: sqlserver }
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: k3d-dotstat-server-0
+      securityContext:
+        fsGroup: 10001
+        fsGroupChangePolicy: OnRootMismatch
+      initContainers:
+        - name: fix-permissions
+          image: busybox:1.36
+          command: ["sh","-c"]
+          args: ["chown -R 10001:10001 /var/opt/mssql 2>/dev/null || true; chmod -R g+rwX /var/opt/mssql || true"]
+          volumeMounts:
+            - name: mssql-data
+              mountPath: /var/opt/mssql
+          securityContext:
+            runAsUser: 0
+      containers:
+        - name: sqlserver
+          image: mcr.microsoft.com/mssql/server:latest
+          securityContext:
+            runAsUser: 10001
+            allowPrivilegeEscalation: false
+          env:
+            - name: ACCEPT_EULA
+              value: "Y"
+            - name: MSSQL_SA_PASSWORD
+              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: SQL_SERVER_PASSWORD } }
+          ports:
+            - containerPort: 1433
+          volumeMounts:
+            - name: mssql-data
+              mountPath: /var/opt/mssql
+          readinessProbe:
+            tcpSocket: { port: 1433 }
+            initialDelaySeconds: 15
+            periodSeconds: 10
+      volumes:
+        - name: mssql-data
+          persistentVolumeClaim:
+            claimName: pvc-mssql
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sqlserver
+  namespace: dotstat
+spec:
+  selector: { app: sqlserver }
+  ports:
+    - port: 1433
+      targetPort: 1433
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo
+  namespace: dotstat
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: mongo } }
+  template:
+    metadata:
+      labels: { app: mongo }
+    spec:
+      containers:
+        - name: mongo
+          image: mongo:7.0.1 # Change to a more recent stable like 8.2.1 and test
+          ports:
+            - containerPort: 27017
+          volumeMounts:
+            - name: mongo-data
+              mountPath: /data/db
+      volumes:
+        - name: mongo-data
+          persistentVolumeClaim:
+            claimName: pvc-mongo
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo
+  namespace: dotstat
+spec:
+  selector: { app: mongo }
+  ports:
+    - port: 27017
+      targetPort: 27017
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: solr
+  namespace: dotstat
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: solr } }
+  template:
+    metadata:
+      labels: { app: solr }
+    spec:
+      volumes:
+        - name: solr-data
+          persistentVolumeClaim:
+            claimName: pvc-solr
+      initContainers:
+        - name: init-solr-data
+          image: busybox:1.36
+          command: ["sh","-c"]
+          args: ["mkdir -p /var/solr/data && chown -R 8983:8983 /var/solr || true"]
+          volumeMounts:
+            - name: solr-data
+              mountPath: /var/solr
+          securityContext:
+            runAsUser: 0
+      containers:
+        - name: solr
+          image: solr:9.6 # Change to a more recent stable like 9.9.0 and test
+          command: ["bash","-lc"]
+          args: ["unset SOLR_PORT; exec solr start -c -f -Dsolr.modules=analysis-extras -Dsolr.max.booleanClauses=4096"]
+          ports:
+            - containerPort: 8983
+          volumeMounts:
+            - name: solr-data
+              mountPath: /var/solr
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: solr-svc
+  namespace: dotstat
+spec:
+  selector: { app: solr }
+  ports:
+    - port: 8983
+      targetPort: 8983
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: keycloak-database
+  namespace: dotstat
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: keycloak-database } }
+  template:
+    metadata:
+      labels: { app: keycloak-database }
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: k3d-dotstat-server-0
+      containers:
+        - name: postgres
+          image: postgres:16 # Change to a more recent stable like 18.1 and test
+          env:
+            - name: POSTGRES_USER
+              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: KEYCLOAK_DATABASE_USER } }
+            - name: POSTGRES_PASSWORD
+              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: KEYCLOAK_DATABASE_PASSWORD } }
+            - name: POSTGRES_DB
+              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: KEYCLOAK_DATABASE_NAME } }
+          ports:
+            - containerPort: 5432
+          volumeMounts:
+            - name: kc-db
+              mountPath: /var/lib/postgresql/data
+      volumes:
+        - name: kc-db
+          persistentVolumeClaim:
+            claimName: pvc-keycloak-db
+        - name: keycloak-realm
+          configMap:
+            name: keycloak-demo-realm
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: keycloak-database
+  namespace: dotstat
+spec:
+  selector: { app: keycloak-database }
+  ports:
+    - port: 5432
+      targetPort: 5432
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: keycloak
+  namespace: dotstat
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: keycloak } }
+  template:
+    metadata:
+      labels: { app: keycloak }
+    spec:
+      containers:
+        - name: keycloak
+          image: keycloak/keycloak:26.4.2 # Already on latest image version
+          imagePullPolicy: IfNotPresent
+          args: ["start","--import-realm"]
+          volumeMounts:
+            - name: keycloak-realm
+              mountPath: /opt/keycloak/data/import/demo.json
+              subPath: keycloack-demo-realm.json
+              readOnly: true
+          env:
+            - name: KC_HTTP_ENABLED
+              value: "true"
+            - name: KC_DB
+              value: postgres
+            - name: KC_DB_URL
+              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: KEYCLOAK_JDBC_URL } }
+            - name: KC_DB_USERNAME
+              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: KEYCLOAK_DATABASE_USER } }
+            - name: KC_DB_PASSWORD
+              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: KEYCLOAK_DATABASE_PASSWORD } }
+            - name: KC_HOSTNAME
+              value: keycloak.local
+            - name: KC_HOSTNAME_URL
+              value: http://keycloak.local
+            - name: KC_HOSTNAME_PORT
+              value: "80"
+            - name: KC_PROXY
+              value: edge
+            - name: PROXY_ADDRESS_FORWARDING
+              value: "true"
+            - name: KC_BOOTSTRAP_ADMIN_USERNAME
+              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: KEYCLOAK_ADMIN_USER } }
+            - name: KC_BOOTSTRAP_ADMIN_PASSWORD
+              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: KEYCLOAK_ADMIN_PASSWORD } }
+          ports:
+            - containerPort: 8080
+          readinessProbe:
+            httpGet: { path: /, port: 8080 }
+            initialDelaySeconds: 20
+            periodSeconds: 10
+      volumes:
+        - name: keycloak-realm
+          configMap:
+            name: keycloak-demo-realm
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: keycloak
+  namespace: dotstat
+spec:
+  selector: { app: keycloak }
+  ports:
+    - port: 8080
+      targetPort: 8080

@@ -1,0 +1,14 @@
+{
+  "permission.group.145": "Verander structuren",
+  "permission.group.145.definition": "Maakt het ophalen, invoegen en bijwerken van structurele informatie mogelijk",
+  "permission.group.2051": "Lees structuren en gegevens onder embargo",
+  "permission.group.2051.definition": "Maakt het mogelijk om structurele informatie en gegevens onder embargo en zonder embargo op te halen",
+  "permission.group.3": "Lees structuren en gegevens",
+  "permission.group.3.definition": "Maakt het mogelijk om structurele informatie en gegevens zonder embargo op te halen",
+  "permission.group.3363": "Gegevens beheren",
+  "permission.group.3363.definition": "Maakt het ophalen van structurele informatie en het ophalen, invoegen, bijwerken en verwijderen van gegevens onder embargo en niet-embargo mogelijk",
+  "permission.group.4095": "Volledige controle",
+  "permission.group.4095.definition": "Maakt volledig beheer van structurele informatie, gegevens onder embargo en niet-embargo en machtigingen mogelijk",
+  "permission.group.657": "Beheer structuren",
+  "permission.group.657.definition": "Maakt het ophalen, invoegen, bijwerken en verwijderen van structurele informatie mogelijk"
+}

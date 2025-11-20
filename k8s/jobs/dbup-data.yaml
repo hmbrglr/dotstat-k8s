@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dbup-data
+  namespace: dotstat
+spec:
+  backoffLimit: 2
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: dbup
+          image: siscc/dotstatsuite-dbup:latest
+          env:
+            - name: EXECUTION_PARAMETERS
+              valueFrom:
+                secretKeyRef:
+                  name: dotstat-secrets
+                  key: EXEC_PARAMS_DATA

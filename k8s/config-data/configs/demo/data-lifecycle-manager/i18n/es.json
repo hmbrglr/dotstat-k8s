@@ -1,0 +1,14 @@
+{
+  "permission.group.145": "Cambiar estructuras",
+  "permission.group.145.definition": "Permite recuperar, insertar y actualizar información estructural",
+  "permission.group.2051": "Leer estructuras y datos embargados",
+  "permission.group.2051.definition": "Permite recuperar información estructural y datos embargados y no embargados",
+  "permission.group.3": "Leer estructuras y datos",
+  "permission.group.3.definition": "Permite recuperar información estructural y datos no embargados",
+  "permission.group.3363": "Administrar datos",
+  "permission.group.3363.definition": "Permite recuperar información estructural y recuperar, insertar, actualizar y eliminar datos embargados y no embargados",
+  "permission.group.4095": "Control total",
+  "permission.group.4095.definition": "Permite gestionar completamente la información estructural, los datos embargados y no embargados y los permisos",
+  "permission.group.657": "Administrar estructuras",
+  "permission.group.657.definition": "Permite recuperar, insertar, actualizar y eliminar información estructural"
+}

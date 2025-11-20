@@ -1,0 +1,132 @@
+{
+  "sdmx": {
+    "typeIds": [
+      "agencyscheme",
+      "categoryscheme",
+      "categorisation",
+      "codelist",
+      "conceptscheme",
+      "contentconstraint",
+      "datastructure",
+      "dataflow",
+      "hierarchicalcodelist",
+      "metadatastructure",
+      "metadataflow",
+      "structureset"
+    ],
+    "uploadSizeLimit": 30000000,
+    "permissionGroups": [
+      {
+        "id": 3,
+        "permissions": [1, 2]
+      },
+      {
+        "id": 145,
+        "permissions": [1, 16, 128]
+      },
+      {
+        "id": 657,
+        "permissions": [1, 16, 128, 512]
+      },
+      {
+        "id": 3363,
+        "permissions": [1, 2, 32, 256, 1024, 2048]
+      },
+      {
+        "id": 2051,
+        "permissions": [1, 2, 2048]
+      },
+      {
+        "id": 4095,
+        "permissions": [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048]
+      }
+    ]
+  },
+  "i18n": {
+    "localeId": "en",
+    "locales": {
+      "en": {
+        "id": "en",
+        "delimiters": { "thousands": " ", "decimal": "."  }
+      },
+      "fr": {
+        "id": "fr",
+        "delimiters": { "thousands": " ", "decimal": ","  }
+      },
+      "es": {
+        "id": "es",
+        "delimiters": { "thousands": " ", "decimal": ","  }
+      },
+      "it": {
+        "id": "it",
+        "delimiters": { "thousands": " ", "decimal": ","  }
+      },
+      "ar": {
+        "id": "ar",
+        "isRtl": true,
+        "delimiters": { "thousands": " ", "decimal": ","  }
+      },
+      "km": {
+        "id": "km",
+        "delimiters": { "thousands": " ", "decimal": ","  }
+      },
+      "nl": {
+        "id": "nl",
+        "delimiters": { "thousands": " ", "decimal": ","  }
+      },
+      "de": {
+        "id": "de",
+        "delimiters": { "thousands": " ", "decimal": ","  }
+      },
+            "th": {
+        "id": "th",
+        "delimiters": { "thousands": " ", "decimal": ","  },
+        "timeFormat": "MMM YYYY"
+      }
+    }
+  },
+  "app": {
+    "footer": {
+      "link": "https://siscc.org/"
+    },
+    "defaultOptionDataValidation": "basic"
+  },
+  "assets": {
+    "logo": "/assets/siscc/data-lifecycle-manager/images/logo.png",
+    "icon": "/assets/siscc/data-lifecycle-manager/images/sis-cc-icon.png"
+  },
+    "logs": {
+    "transfer": {
+      "timeExtents": {
+        "start": "2019-01-01",
+        "end": "now"
+      }
+    }
+  },
+  "resources": {
+    "helpLink": "https://sis-cc.gitlab.io/dotstatsuite-documentation/using-dlm/manage-data/external-resources",
+    "icons": [
+      {
+        "id": "pdf",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg"
+      },
+      {
+        "id": "csv",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/1/18/Text-csv-text.svg"
+      },
+      {
+        "id": "excel",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg"
+      },
+      {
+        "id": "words",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/3/39/Microsoft_Office_Word_%282013%E2%80%932019%29.svg"
+      },
+      {
+        "id": "zip",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/f/f6/.zip_OneDrive_icon.svg"
+      }
+    ]
+  },
+  "styles": "/assets/siscc/data-lifecycle-manager/styles/styles.css"
+}

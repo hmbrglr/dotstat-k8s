@@ -1,0 +1,42 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: init-assets
+  namespace: dotstat
+  annotations:
+    "helm.sh/hook": post-install,post-upgrade
+    "helm.sh/hook-weight": "-5"
+spec:
+  template:
+    spec:
+      containers:
+      - name: init-assets
+        image: busybox:1.36
+        command: ["sh", "-c"]
+        args:
+        - |
+          echo "Checking assets..."
+          if [ ! -d "/app/data/assets/siscc" ]; then
+            echo "Assets missing. Please ensure assets are present in the host config-data directory."
+            # In a real scenario, we might copy from a container image here, 
+            # but since we are using hostPath, we rely on the user populating the host dir.
+            # However, to be helpful, we can check if the source exists in the mounted config-data.
+            if [ -d "/app/data/config-data/assets" ]; then
+               echo "Found assets in config-data, copying..."
+               mkdir -p /app/data/assets
+               cp -r /app/data/config-data/assets/* /app/data/assets/
+               echo "Assets copied."
+            else
+               echo "No assets found in config-data/assets. Skipping."
+            fi
+          else
+            echo "Assets directory exists."
+          fi
+        volumeMounts:
+        - name: config-data
+          mountPath: /app/data
+      restartPolicy: OnFailure
+      volumes:
+      - name: config-data
+        persistentVolumeClaim:
+          claimName: pvc-config-data

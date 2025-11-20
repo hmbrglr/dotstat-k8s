@@ -1,0 +1,71 @@
+{
+  "demo": {
+    "id": "demo",
+    "label": "demo",
+    "default": true,
+    "spaces": {
+      "production": {
+        "label": "production",
+        "hasRangeHeader": true,
+        "supportsReferencePartial": true,
+        "supportsPostLongRequests": true,
+        "hasLastNObservations": false,
+        "url": "http://nsi.local/rest",
+        "urlv3": "http://nsi.local/rest/v2",
+        "headers": {
+          "data": {
+            "json": "application/vnd.sdmx.data+json;version=2.0"
+          }
+        }
+      }
+    },
+    "datasources": {
+      "ds-production": {
+        "dataSpaceId": "production",
+        "indexed": true,
+        "dataqueries": [
+          {
+            "version": "1.0",
+            "categorySchemeId": "TOPICS",
+            "agencyId": "CH1"
+          },
+          {
+            "version": "1.0",
+            "categorySchemeId": "OECDCS1",
+            "agencyId": "OECD"
+          }
+        ]
+      }
+    },
+    "scopes": {
+      "dlm": {
+        "type": "dlm",
+        "label": "dlm",
+        "oidc": {
+          "authority": "http://keycloak.local/realms/demo",
+          "client_id": "stat-suite"
+        },
+        "spaces": [
+          {
+            "id": "production",
+            "color": "white",
+            "backgroundColor": "#606A80",
+            "label": "production",
+            "transferUrl": "http://transfer.local/2",
+            "dataExplorerUrl": "http://explorer.local"
+          }
+        ]
+      },
+      "de": {
+        "type": "de",
+        "label": "de",
+        "spaces": [
+          "production"
+        ],
+        "datasources": [
+          "ds-production"
+        ]
+      }
+    }
+  }
+}

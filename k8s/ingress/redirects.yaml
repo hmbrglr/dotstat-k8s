@@ -1,0 +1,87 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: explorer-redirect-ingress
+  namespace: dotstat
+  annotations:
+    traefik.ingress.kubernetes.io/router.priority: "1000"
+    traefik.ingress.kubernetes.io/router.middlewares: dotstat-explorer-redirect-root@kubernetescrd
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: explorer.local
+      http:
+        paths:
+          - path: /
+            pathType: Exact
+            backend:
+              service:
+                name: data-explorer
+                port:
+                  number: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: lifecycle-redirect-ingress
+  namespace: dotstat
+  annotations:
+    traefik.ingress.kubernetes.io/router.priority: "1000"
+    traefik.ingress.kubernetes.io/router.middlewares: dotstat-lifecycle-redirect-root@kubernetescrd
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: lifecycle.local
+      http:
+        paths:
+          - path: /
+            pathType: Exact
+            backend:
+              service:
+                name: lifecycle-manager
+                port:
+                  number: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: viewer-redirect-ingress
+  namespace: dotstat
+  annotations:
+    traefik.ingress.kubernetes.io/router.priority: "1000"
+    traefik.ingress.kubernetes.io/router.middlewares: dotstat-explorer-redirect-root@kubernetescrd
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: viewer.local
+      http:
+        paths:
+          - path: /
+            pathType: Exact
+            backend:
+              service:
+                name: data-viewer
+                port:
+                  number: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: share-redirect-ingress
+  namespace: dotstat
+  annotations:
+    traefik.ingress.kubernetes.io/router.priority: "1000"
+    traefik.ingress.kubernetes.io/router.middlewares: dotstat-explorer-redirect-root@kubernetescrd
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: share.local
+      http:
+        paths:
+          - path: /
+            pathType: Exact
+            backend:
+              service:
+                name: share
+                port:
+                  number: 80
