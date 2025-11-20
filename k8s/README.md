@@ -1,5 +1,7 @@
 # DotStat Suite Kubernetes Setup
 
+!!Note: this is still in development so it might not be perfect. It is however a great way to get started with the dotstatsuite. I would also like to thank the folks at SIS-CC for developing the dotstatsuite!
+
 This directory contains Kubernetes manifests for deploying the DotStat Suite.
 
 ## Prerequisites
@@ -76,22 +78,10 @@ k3d cluster delete dotstat
 ### 1. Create namespace and apply base resources
 
 ```bash
-# Create namespace
-kubectl create namespace dotstat
-
-# Apply storage, config, and secrets
-kubectl apply -f storage/
-kubectl apply -f config/
-
-# Apply infrastructure (databases, keycloak, etc.)
-kubectl apply -f deployments/infra.yaml
-
-# Wait for databases to be ready
-kubectl wait --for=condition=ready pod -l app=sqlserver -n dotstat --timeout=300s
-kubectl wait --for=condition=ready pod -l app=keycloak -n dotstat --timeout=300s
+./deploy-all.sh
 ```
 
-### 2. Initialize database schemas
+### 2. Initialize database schemas (if not run with `deploy-all.sh`)
 
 ```bash
 # Run database initialization jobs
@@ -105,27 +95,6 @@ kubectl wait --for=condition=complete job/dbup-data -n dotstat --timeout=300s
 kubectl wait --for=condition=complete job/dbup-mapping -n dotstat --timeout=300s
 ```
 
-### 3. Copy assets to persistent storage
-
-The config-data assets need to be copied into the persistent volume:
-
-```bash
-kubectl cp ./config-data/assets/siscc dotstat/$(kubectl get pod -n dotstat -l app=config-server -o jsonpath='{.items[0].metadata.name}'):/app/data/assets/
-```
-
-### 4. Import Keycloak realm
-
-Access the Keycloak admin console:
-
-```bash
-# Option 1: Via ingress (if configured)
-# Open http://keycloak.local in your browser
-
-# Option 2: Via port-forward
-kubectl port-forward -n dotstat svc/keycloak 8080:8080
-# Then open http://localhost:8080
-```
-
 Login with admin credentials (default: `admin` / `P@ssw0rd!`)
 
 Import the realm:
@@ -135,17 +104,7 @@ Import the realm:
 
 **Important**: After importing, go to **Clients** → **stat-suite** → **Settings** and ensure **Client authentication** is set to **OFF** (public client).
 
-### 5. Deploy applications
-
-```bash
-# Deploy application services
-kubectl apply -f deployments/apps.yaml
-
-# Apply ingress rules
-kubectl apply -f ingress/
-```
-
-### 6. Verify deployment
+### 3. Verify deployment
 
 ```bash
 # Check all pods are running
