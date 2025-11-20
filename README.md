@@ -1,6 +1,6 @@
 # DotStat Suite Kubernetes Setup
 
-!!Note: this is still in development so it might not be perfect. It is however a great way to get started with the dotstatsuite. I would also like to thank the folks at SIS-CC for developing the dotstatsuite!
+!!Note: this is still in development so it might not be perfect. It is however a great way to get started with the dotstatsuite. I would also like to thank the folks at SIS-CC for developing the dotstatsuite. For reference, the original repository is located [here](https://gitlab.com/sis-cc/.stat-suite). 
 
 This directory contains Kubernetes manifests for deploying the DotStat Suite.
 
