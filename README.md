@@ -4,6 +4,8 @@
 
 Since this was initially developed for a WSL based environment, its important to note that when running on Apple Silicon/arm64 you will need to make some changes to the images used. This is an additional item that will be dealt with in the near future. However, since Microsoft SQL Server Docker images have a current issue on arm64 I will keep this one of my priorities.
 
+Should this be a show-stopper, you can replace the used Microsoft SQL Server Docker image with this one: `mcr.microsoft.com/azure-sql-edge:latest` since Azure SQL Edge is supported to run on arm64 environments.
+
 This directory contains Kubernetes manifests for deploying the DotStat Suite.
 
 ## Prerequisites
