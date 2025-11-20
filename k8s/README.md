@@ -130,7 +130,7 @@ Login with admin credentials (default: `admin` / `P@ssw0rd!`)
 
 Import the realm:
 1. Go to realm dropdown → Create realm
-2. Click "Browse" and select `demo-realm/keycloack-demo-realm.json`
+2. Click "Browse" and select `demo-realm/keycloak-demo-realm.json`
 3. Click "Create"
 
 **Important**: After importing, go to **Clients** → **stat-suite** → **Settings** and ensure **Client authentication** is set to **OFF** (public client).
@@ -203,7 +203,7 @@ Ensure the `stat-suite` client in Keycloak is configured as a public client (Cli
 
 - **Secrets**: Modify `config/config-and-secrets.yaml` to change passwords and API keys
 - **Ingress hosts**: Modify files in `ingress/` to change domain names
-- **Keycloak realm**: Modify `demo-realm/keycloack-demo-realm.json` before importing
+- **Keycloak realm**: Modify `demo-realm/keycloak-demo-realm.json` before importing
 
 ## Clean Up
 
