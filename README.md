@@ -2,7 +2,7 @@
 
 !!Note: this is still in development so it might not be perfect. It is however a great way to get started with the dotstatsuite. I would also like to thank the folks at SIS-CC for developing the dotstatsuite. For reference, the original repository is located [here](https://gitlab.com/sis-cc/.stat-suite). 
 
-Since this was initially developed for a WSL based environment, its important to note that when running on Apple Silicon/arm64 you will need to make some changes to the images used. This is an additional item that will be dealt with in the near future.
+Since this was initially developed for a WSL based environment, its important to note that when running on Apple Silicon/arm64 you will need to make some changes to the images used. This is an additional item that will be dealt with in the near future. However, since Microsoft SQL Server Docker images have a current issue on arm64 I will keep this one of my priorities.
 
 This directory contains Kubernetes manifests for deploying the DotStat Suite.
 
