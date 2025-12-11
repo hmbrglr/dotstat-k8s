@@ -32,6 +32,21 @@ spec:
           else
             echo "Assets directory exists."
           fi
+          
+          echo "Checking i18n..."
+          if [ ! -d "/app/data/i18n" ] || [ -z "$(ls -A /app/data/i18n)" ]; then
+             echo "i18n missing or empty."
+             if [ -d "/app/data/config-data/i18n" ]; then
+                echo "Found i18n in config-data, copying..."
+                mkdir -p /app/data/i18n
+                cp -r /app/data/config-data/i18n/* /app/data/i18n/
+                echo "i18n copied."
+             else
+                echo "No i18n found in config-data/i18n. Skipping."
+             fi
+          else
+             echo "i18n directory exists and is not empty."
+          fi
         volumeMounts:
         - name: config-data
           mountPath: /app/data

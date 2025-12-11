@@ -15,7 +15,7 @@ spec:
       initContainers:
         - name: ensure-config-dirs
           image: busybox:1.36
-          command: ["sh","-lc"]
+          command: ["sh", "-lc"]
           args:
             - |
               mkdir -p /app/data/configs/demo/data-explorer \
@@ -29,9 +29,17 @@ spec:
           image: siscc/dotstatsuite-config:causality
           env:
             - name: DATA_DIR
-              valueFrom: { configMapKeyRef: { name: dotstat-config, key: DATA_DIRECTORY } }
+              valueFrom:
+                {
+                  configMapKeyRef:
+                    { name: dotstat-config, key: DATA_DIRECTORY },
+                }
             - name: BUCKET_PROVIDER
-              valueFrom: { configMapKeyRef: { name: dotstat-config, key: CONFIG_DATA_PROVIDER } }
+              valueFrom:
+                {
+                  configMapKeyRef:
+                    { name: dotstat-config, key: CONFIG_DATA_PROVIDER },
+                }
             - name: SERVER_HOST
               value: 0.0.0.0
             - name: SERVER_PORT
@@ -99,7 +107,7 @@ spec:
       initContainers:
         - name: wait-for-config
           image: busybox:1.36
-          command: ["sh","-lc"]
+          command: ["sh", "-lc"]
           args:
             - |
               echo "Waiting for config-server:80 ...";
@@ -109,7 +117,8 @@ spec:
           image: siscc/dotstatsuite-sdmx-faceted-search:causality
           env:
             - name: DEFAULT_TENANT
-              valueFrom: { configMapKeyRef: { name: dotstat-config, key: TENANT_ID } }
+              valueFrom:
+                { configMapKeyRef: { name: dotstat-config, key: TENANT_ID } }
             - name: CONFIG_URL
               value: http://config-server
             - name: MONGODB_URL
@@ -121,7 +130,8 @@ spec:
             - name: SOLR_PORT
               value: "8983"
             - name: API_KEY
-              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: SEARCH_API_KEY } }
+              valueFrom:
+                { secretKeyRef: { name: dotstat-secrets, key: SEARCH_API_KEY } }
           ports:
             - containerPort: 80
           readinessProbe:
@@ -161,7 +171,11 @@ spec:
           image: maildev/maildev:latest
           env:
             - name: MAILDEV_SMTP_PORT
-              valueFrom: { configMapKeyRef: { name: dotstat-config, key: MAILDEV_INCOMING_MAIL_PORT } }
+              valueFrom:
+                {
+                  configMapKeyRef:
+                    { name: dotstat-config, key: MAILDEV_INCOMING_MAIL_PORT },
+                }
           ports:
             - containerPort: 1080
             - containerPort: 25
@@ -200,15 +214,18 @@ spec:
             - name: ServiceId
               value: transfer-service
             - name: DotStatSuiteCoreCommonDbConnectionString
-              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: COMMON_CS } }
+              valueFrom:
+                { secretKeyRef: { name: dotstat-secrets, key: COMMON_CS } }
             - name: DefaultLanguageCode
               value: en
             - name: SpacesInternal__0__Id
               value: production
             - name: SpacesInternal__0__DotStatSuiteCoreStructDbConnectionString
-              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: MAPPING_CS } }
+              valueFrom:
+                { secretKeyRef: { name: dotstat-secrets, key: MAPPING_CS } }
             - name: SpacesInternal__0__DotStatSuiteCoreDataDbConnectionString
-              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: DATA_CS } }
+              valueFrom:
+                { secretKeyRef: { name: dotstat-secrets, key: DATA_CS } }
             - name: ASPNETCORE_URLS
               value: http://0.0.0.0:8080
             - name: auth__enabled
@@ -220,7 +237,7 @@ spec:
             - name: AuthorizationManagement__Enabled
               value: "false"
           ports:
-            - containerPort: 80
+            - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -231,7 +248,7 @@ spec:
   selector: { app: transfer-service }
   ports:
     - port: 80
-      targetPort: 80
+      targetPort: 8080
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -252,11 +269,23 @@ spec:
             - name: auth__enabled
               value: "false"
             - name: auth__authority
-              valueFrom: { configMapKeyRef: { name: dotstat-config, key: KEYCLOAK_AUTHORITY_URL } }
+              valueFrom:
+                {
+                  configMapKeyRef:
+                    { name: dotstat-config, key: KEYCLOAK_AUTHORITY_URL },
+                }
             - name: auth__clientId
-              valueFrom: { configMapKeyRef: { name: dotstat-config, key: KEYCLOAK_CLIENT_ID } }
+              valueFrom:
+                {
+                  configMapKeyRef:
+                    { name: dotstat-config, key: KEYCLOAK_CLIENT_ID },
+                }
             - name: auth__authorizationUrl
-              valueFrom: { configMapKeyRef: { name: dotstat-config, key: KEYCLOAK_AUTH_URL } }
+              valueFrom:
+                {
+                  configMapKeyRef:
+                    { name: dotstat-config, key: KEYCLOAK_AUTH_URL },
+                }
             - name: auth__scopes__0
               value: openid
             - name: auth__scopes__1
@@ -272,7 +301,8 @@ spec:
             - name: auth__validateIssuer
               value: "false"
             - name: DotStatSuiteCoreCommonDbConnectionString
-              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: COMMON_CS } }
+              valueFrom:
+                { secretKeyRef: { name: dotstat-secrets, key: COMMON_CS } }
           ports:
             - containerPort: 80
 ---
@@ -308,9 +338,17 @@ spec:
             - name: auth__allowAnonymous
               value: "true"
             - name: auth__authority
-              valueFrom: { configMapKeyRef: { name: dotstat-config, key: KEYCLOAK_AUTHORITY_URL } }
+              valueFrom:
+                {
+                  configMapKeyRef:
+                    { name: dotstat-config, key: KEYCLOAK_AUTHORITY_URL },
+                }
             - name: auth__clientId
-              valueFrom: { configMapKeyRef: { name: dotstat-config, key: KEYCLOAK_CLIENT_ID } }
+              valueFrom:
+                {
+                  configMapKeyRef:
+                    { name: dotstat-config, key: KEYCLOAK_CLIENT_ID },
+                }
             - name: auth__requireHttps
               value: "false"
             - name: auth__validateIssuer
@@ -320,25 +358,47 @@ spec:
             - name: mappingStore__Id__Default
               value: production
             - name: DotStatSuiteCoreCommonDbConnectionString
-              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: COMMON_CS } }
+              valueFrom:
+                { secretKeyRef: { name: dotstat-secrets, key: COMMON_CS } }
             - name: SQL_SERVER
               value: sqlserver
             - name: SQL_DATABASE
-              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: MAPPING_DATABASE_NAME } }
+              valueFrom:
+                {
+                  secretKeyRef:
+                    { name: dotstat-secrets, key: MAPPING_DATABASE_NAME },
+                }
             - name: SQL_USER
-              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: MAPPING_DATABASE_USER } }
+              valueFrom:
+                {
+                  secretKeyRef:
+                    { name: dotstat-secrets, key: MAPPING_DATABASE_USER },
+                }
             - name: SQL_PASSWORD
-              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: MAPPING_DATABASE_PASSWORD } }
+              valueFrom:
+                {
+                  secretKeyRef:
+                    { name: dotstat-secrets, key: MAPPING_DATABASE_PASSWORD },
+                }
             - name: SQL_PROVIDER
               value: System.Data.SqlClient
             - name: disseminationDbConnection__dbType
               value: SqlServer
             - name: disseminationDbConnection__connectionString
-              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: DATA_CS } }
+              valueFrom:
+                { secretKeyRef: { name: dotstat-secrets, key: DATA_CS } }
             - name: MA_SQL_USER
-              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: MAPPING_DATABASE_USER } }
+              valueFrom:
+                {
+                  secretKeyRef:
+                    { name: dotstat-secrets, key: MAPPING_DATABASE_USER },
+                }
             - name: MA_SQL_PASSWORD
-              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: MAPPING_DATABASE_PASSWORD } }
+              valueFrom:
+                {
+                  secretKeyRef:
+                    { name: dotstat-secrets, key: MAPPING_DATABASE_PASSWORD },
+                }
             - name: MA_ALWAYS_RESET
               value: "Y"
             - name: INSERT_NEW_ITEM_SCHEME_VALUES
@@ -399,12 +459,14 @@ spec:
           lifecycle:
             postStart:
               exec:
-                command: ["/bin/sh", "-c", "rm -f /opt/build/static/js/*.br || true"]
+                command:
+                  ["/bin/sh", "-c", "rm -f /opt/build/static/js/*.br || true"]
           env:
             - name: CONFIG_URL
               value: "http://config-server"
             - name: DEFAULT_TENANT
-              valueFrom: { configMapKeyRef: { name: dotstat-config, key: TENANT_ID } }
+              valueFrom:
+                { configMapKeyRef: { name: dotstat-config, key: TENANT_ID } }
           ports:
             - containerPort: 80
           volumeMounts:
@@ -447,12 +509,14 @@ spec:
           lifecycle:
             postStart:
               exec:
-                command: ["/bin/sh", "-c", "rm -f /opt/build/static/js/*.br || true"]
+                command:
+                  ["/bin/sh", "-c", "rm -f /opt/build/static/js/*.br || true"]
           env:
             - name: CONFIG_URL
               value: "http://config-server"
             - name: DEFAULT_TENANT
-              valueFrom: { configMapKeyRef: { name: dotstat-config, key: TENANT_ID } }
+              valueFrom:
+                { configMapKeyRef: { name: dotstat-config, key: TENANT_ID } }
             - name: SERVER_PORT
               value: "80"
             - name: TRANSFER_SERVER_URL
@@ -462,7 +526,8 @@ spec:
             - name: SFS_URL
               value: http://sfs.local/admin
             - name: SFS_API_KEY
-              valueFrom: { secretKeyRef: { name: dotstat-secrets, key: SEARCH_API_KEY } }
+              valueFrom:
+                { secretKeyRef: { name: dotstat-secrets, key: SEARCH_API_KEY } }
           ports:
             - containerPort: 80
           volumeMounts:
@@ -505,12 +570,14 @@ spec:
           lifecycle:
             postStart:
               exec:
-                command: ["/bin/sh", "-c", "rm -f /opt/build/static/js/*.br || true"]
+                command:
+                  ["/bin/sh", "-c", "rm -f /opt/build/static/js/*.br || true"]
           env:
             - name: CONFIG_URL
               value: "http://config-server"
             - name: DEFAULT_TENANT
-              valueFrom: { configMapKeyRef: { name: dotstat-config, key: TENANT_ID } }
+              valueFrom:
+                { configMapKeyRef: { name: dotstat-config, key: TENANT_ID } }
           ports:
             - containerPort: 80
           volumeMounts:
@@ -553,12 +620,14 @@ spec:
           lifecycle:
             postStart:
               exec:
-                command: ["/bin/sh", "-c", "rm -f /opt/build/static/js/*.br || true"]
+                command:
+                  ["/bin/sh", "-c", "rm -f /opt/build/static/js/*.br || true"]
           env:
             - name: CONFIG_URL
               value: "http://config-server"
             - name: DEFAULT_TENANT
-              valueFrom: { configMapKeyRef: { name: dotstat-config, key: TENANT_ID } }
+              valueFrom:
+                { configMapKeyRef: { name: dotstat-config, key: TENANT_ID } }
             - name: MONGODB_URL
               value: mongodb://mongo:27017
             - name: MONGODB_DATABASE
@@ -585,3 +654,4 @@ spec:
     - port: 80
       targetPort: 3007
 ---
+

@@ -78,161 +78,39 @@ data:
         },
         "defaultCombinations": {
           "concepts": "UNIT:UNIT_MEASURE,UNIT_MULT,BASE_PER",
-          "names": {
-            "ar": "UNIT:وحدة القياس المجمعة",
-            "de": "UNIT:Kombinierte Maßeinheit",
-            "en": "UNIT:Combined unit of measure",
-            "es": "UNIT:Unidad de medida combinada",
-            "fr": "UNIT:Unité de mesure combinée",
-            "it": "UNIT:Unità di misura combinata",
-            "km": "UNIT:ឯកតារង្វាស់រួមបញ្ចូលគ្នា",
-            "nl": "UNIT:Gecombineerde maateenheid",
-            "th": "UNIT:หน่วยวัดรวม"
-          }
+          "names": {"ar": "UNIT:وحدة القياس المجمعة", "de": "UNIT:Kombinierte Maßeinheit", "en": "UNIT:Combined unit of measure", "es": "UNIT:Unidad de medida combinada", "fr": "UNIT:Unité de mesure combinée", "it": "UNIT:Unità di misura combinata", "km": "UNIT:ឯកតារង្វាស់រួមបញ្ចូលគ្នា", "nl": "UNIT:Gecombineerde maateenheid", "th": "UNIT:หน่วยวัดรวม"}
         },
-        "period": { "boundaries": ["1970", "2025"], "default": ["2015", "2021"] },
+        "period": {"boundaries": ["1970", "2025"], "default": ["2015", "2021"]},
         "valueIcons": {}
       },
-      "viewer": {
-        "api": {
-          "doc": "https://github.com/sdmx-twg/sdmx-rest/tree/v1.5.0/v2_1/ws/rest/docs",
-          "contact": "https://gitlab.com/sis-cc/.stat-suite"
-        }
-      },
-      "app": {
-        "defaultView": "OVERVIEW",
-        "favicon": "/assets/siscc/data-explorer/images/favicon.ico",
-        "footer": { "link": "https://siscc.org/" },
-        "linkTags": [
-          "https://fonts.googleapis.com/css?family=Roboto+Slab:400",
-          "https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700"
-        ]
-      },
-      "assets": {
-        "surveyImage": "/assets/siscc/data-explorer/images/popup-survey.png",
-        "header": "/assets/siscc/data-explorer/images/sis-cc-logo.png",
-        "subheader": "/assets/siscc/data-explorer/images/dotstat-data-explorer-logo.png",
-        "footer": "/assets/siscc/data-explorer/images/sis-cc-icon.png",
-        "splash": "/assets/siscc/data-explorer/images/dotstat-data-explorer-logo.png",
-        "viewerFooter": {
-          "en": "/assets/siscc/data-explorer/images/sis-cc-logo.png",
-          "fr": "/assets/siscc/data-explorer/images/dotstat-data-explorer-logo.png"
-        }
-      },
-      "chart": {
-        "isVisible": true,
-        "url": "",
-        "source": "https://de-demo.siscc.org/",
-        "maps": {
-          "world": {
-            "id": "world",
-            "projection": "geoMercator",
-            "path": "/assets/siscc/data-explorer/maps/world_countries.json",
-            "levels": [
-              { "id": "countries", "names": { "en": "world countries", "fr": "pays du monde" } }
-            ]
-          }
-        },
-        "options": {
-          "axis": {
-            "x": { "font": { "family": "'Segoe UI'" } },
-            "y": { "font": { "family": "'Segoe UI'" } }
-          },
-          "serie": {
-            "annotation": { "font": { "family": "'Segoe UI'" } },
-            "tooltip": { "font": { "family": "'Segoe UI'" } }
-          }
-        },
-        "size": { "height": 400 }
-      },
-      "table": { "cellsLimit": 3000 },
-      "theme": {
-        "visFont": "'Segoe UI'",
-        "palette": {
-          "secondary": { "dark": "#ffffff" },
-          "tertiary": { "main": "#282fb8" }
-        }
-      },
-      "mixins": { "dataflow": { "desc": { "mutedText": { "color": "#FFC0CB" }, "unmutedText": { "color": "#FFFFF" } } } },
-      "i18n": {
-        "localeId": "en",
-        "locales": {
-          "en": { "id": "en", "delimiters": { "thousands": " ", "decimal": "." }, "timeFormat": "YYYY-MMM" },
-          "fr": { "id": "fr", "delimiters": { "thousands": " ", "decimal": "," }, "timeFormat": "MMM YYYY" }
-        }
-      },
+      "viewer": {"api": {"doc": "https://github.com/sdmx-twg/sdmx-rest/tree/v1.5.0/v2_1/ws/rest/docs", "contact": "https://gitlab.com/sis-cc/.stat-suite"}},
+      "app": {"defaultView": "OVERVIEW", "favicon": "/assets/siscc/data-explorer/images/favicon.ico", "footer": {"link": "https://siscc.org/"}, "linkTags": ["https://fonts.googleapis.com/css?family=Roboto+Slab:400", "https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700"]},
+      "assets": {"surveyImage": "/assets/siscc/data-explorer/images/popup-survey.png", "header": "/assets/siscc/data-explorer/images/sis-cc-logo.png", "subheader": "/assets/siscc/data-explorer/images/dotstat-data-explorer-logo.png", "footer": "/assets/siscc/data-explorer/images/sis-cc-icon.png", "splash": "/assets/siscc/data-explorer/images/dotstat-data-explorer-logo.png", "viewerFooter": {"en": "/assets/siscc/data-explorer/images/sis-cc-logo.png", "fr": "/assets/siscc/data-explorer/images/dotstat-data-explorer-logo.png"}},
+      "chart": {"isVisible": true, "url": "", "source": "https://de-demo.siscc.org/", "maps": {"world": {"id": "world", "projection": "geoMercator", "path": "/assets/siscc/data-explorer/maps/world_countries.json", "levels": [{"id": "countries", "names": {"en": "world countries", "fr": "pays du monde"}}]}}, "options": {"axis": {"x": {"font": {"family": "'Segoe UI'"}}, "y": {"font": {"family": "'Segoe UI'"}}}, "serie": {"annotation": {"font": {"family": "'Segoe UI'"}}, "tooltip": {"font": {"family": "'Segoe UI'"}}}}, "size": {"height": 400}},
+      "table": {"cellsLimit": 3000},
+      "theme": {"visFont": "'Segoe UI'", "palette": {"secondary": {"dark": "#ffffff"}, "tertiary": {"main": "#282fb8"}}},
+      "mixins": {"dataflow": {"desc": {"mutedText": {"color": "#FFC0CB"}, "unmutedText": {"color": "#FFFFF"}}}},
+      "i18n": {"localeId": "en", "locales": {"en": {"id": "en", "delimiters": {"thousands": " ", "decimal": "."}, "timeFormat": "YYYY-MMM"}, "fr": {"id": "fr", "delimiters": {"thousands": " ", "decimal": ","}, "timeFormat": "MMM YYYY"}}},
       "styles": "/assets/siscc/data-explorer/styles/styles.css",
-      "search": {
-        "endpoint": "http://localhost:3004/api",
-        "homeFacetIds": ["Topic", "Thème", "Reference area", "Zone de référence", "مرجع المنطقة", "Frequency", "Fréquence", "الدورية", "datasourceId"],
-        "homeFacetLevel2Clickable": true,
-        "homeFacetCentered": true,
-        "expandedHomeFacets": ["Topic", "Thème"],
-        "pinnedFacetIds": ["datasourceId", "Topic", "Thème", "Reference area", "Zone de référence", "مرجع المنطقة", "Frequency", "Fréquence", "الدورية"],
-        "downloadableDataflowResults": true,
-        "excludedFacetIds": ["Territory", "Indicator number", "Age", "Reporting country", "Counterpart country", "Activity", "Institutional sector", "Transaction", "Financial instrument"],
-        "defaultRows": 20
-      },
-      "share": {
-        "confirmUrl": "http://localhost:7002",
-        "endpoint": "http://localhost:3005/api",
-        "policy": "http://www.oecd.org/general/privacypolicy.htm"
-      },
-      "contact": {
-        "mailTo": {
-          "feedback": "feedback@sisscc.org",
-          "problem": "problem@sisscc.org",
-          "question": "question@sisscc.org"
-        }
-      }
+      "search": {"endpoint": "http://sfs.local/api", "homeFacetIds": ["Topic", "Thème", "Reference area", "Zone de référence", "مرجع المنطقة", "Frequency", "Fréquence", "الدورية", "datasourceId"], "homeFacetLevel2Clickable": true, "homeFacetCentered": true, "expandedHomeFacets": ["Topic", "Thème"], "pinnedFacetIds": ["datasourceId", "Topic", "Thème", "Reference area", "Zone de référence", "مرجع المنطقة", "Frequency", "Fréquence", "الدورية"], "downloadableDataflowResults": true, "excludedFacetIds": ["Territory", "Indicator number", "Age", "Reporting country", "Counterpart country", "Activity", "Institutional sector", "Transaction", "Financial instrument"], "defaultRows": 20},
+      "share": {"confirmUrl": "http://share.local", "endpoint": "http://share.local/api", "policy": "http://www.oecd.org/general/privacypolicy.htm"},
+      "contact": {"mailTo": {"feedback": "feedback@sisscc.org", "problem": "problem@sisscc.org", "question": "question@sisscc.org"}}
     }
   data-lifecycle-manager-settings.json: |
     {
-      "sdmx": {
-        "typeIds": ["agencyscheme","categoryscheme","categorisation","codelist","conceptscheme","contentconstraint","datastructure","dataflow","hierarchicalcodelist","metadatastructure","metadataflow","structureset"],
-        "uploadSizeLimit": 30000000,
-        "permissionGroups": [
-          {"id": 3, "permissions": [1,2]},
-          {"id": 145, "permissions": [1,16,128]},
-          {"id": 657, "permissions": [1,16,128,512]},
-          {"id": 3363, "permissions": [1,2,32,256,1024,2048]},
-          {"id": 2051, "permissions": [1,2,2048]},
-          {"id": 4095, "permissions": [1,2,4,8,16,32,64,128,256,512,1024,2048]}
-        ]
-      },
-      "i18n": {
-        "localeId": "en",
-        "locales": {
-          "en": { "id": "en", "delimiters": { "thousands": " ", "decimal": "." } },
-          "fr": { "id": "fr", "delimiters": { "thousands": " ", "decimal": "," } }
-        }
-      },
-      "app": { "footer": { "link": "https://siscc.org/" }, "defaultOptionDataValidation": "basic" },
-      "assets": {
-        "logo": "/assets/siscc/data-lifecycle-manager/images/logo.png",
-        "icon": "/assets/siscc/data-lifecycle-manager/images/sis-cc-icon.png"
-      },
-      "logs": { "transfer": { "timeExtents": { "start": "2019-01-01", "end": "now" } } },
-      "resources": { "helpLink": "https://sis-cc.gitlab.io/dotstatsuite-documentation/using-dlm/manage-data/external-resources" },
+      "sdmx": {"typeIds": ["agencyscheme","categoryscheme","categorisation","codelist","conceptscheme","contentconstraint","datastructure","dataflow","hierarchicalcodelist","metadatastructure","metadataflow","structureset"], "uploadSizeLimit": 30000000, "permissionGroups": [{"id": 3, "permissions": [1,2]}, {"id": 145, "permissions": [1,16,128]}, {"id": 657, "permissions": [1,16,128,512]}, {"id": 3363, "permissions": [1,2,32,256,1024,2048]}, {"id": 2051, "permissions": [1,2,2048]}, {"id": 4095, "permissions": [1,2,4,8,16,32,64,128,256,512,1024,2048]}]},
+      "i18n": {"localeId": "en", "locales": {"en": {"id": "en", "delimiters": {"thousands": " ", "decimal": "."}}, "fr": {"id": "fr", "delimiters": {"thousands": " ", "decimal": ","}}}},
+      "app": {"footer": {"link": "https://siscc.org/"}, "defaultOptionDataValidation": "basic"},
+      "assets": {"logo": "/assets/siscc/data-lifecycle-manager/images/logo.png", "icon": "/assets/siscc/data-lifecycle-manager/images/sis-cc-icon.png"},
+      "logs": {"transfer": {"timeExtents": {"start": "2019-01-01", "end": "now"}}},
+      "resources": {"helpLink": "https://sis-cc.gitlab.io/dotstatsuite-documentation/using-dlm/manage-data/external-resources"},
       "styles": "/assets/siscc/data-lifecycle-manager/styles/styles.css"
     }
   data-viewer-settings.json: |
     {
-      "app": { "title": "SIS-CC .Stat Data viewer", "favicon": "/assets/siscc/data-explorer/images/favicon.ico" },
-      "share": { "endpoint": "http://share.local" },
-      "i18n": {
-        "locales": {
-          "en": { "id": "en", "delimiters": { "thousands": " ", "decimal": "." } },
-          "fr": { "id": "fr", "delimiters": { "thousands": " ", "decimal": "," } }
-        }
-      },
-      "sdmx": {
-        "attributes": {
-          "flags": ["OBS_STATUS"],
-          "footnotes": ["TIME_FORMAT"],
-          "prefscale": ["PREF_SCALE"],
-          "decimals": ["DECIMALS"]
-        }
-      },
+      "app": {"title": "SIS-CC .Stat Data viewer", "favicon": "/assets/siscc/data-explorer/images/favicon.ico"},
+      "share": {"endpoint": "http://share.local"},
+      "i18n": {"locales": {"en": {"id": "en", "delimiters": {"thousands": " ", "decimal": "."}}, "fr": {"id": "fr", "delimiters": {"thousands": " ", "decimal": ","}}}},
+      "sdmx": {"attributes": {"flags": ["OBS_STATUS"], "footnotes": ["TIME_FORMAT"], "prefscale": ["PREF_SCALE"], "decimals": ["DECIMALS"]}},
       "styles": "/assets/siscc/data-explorer/styles/styles.css"
     }

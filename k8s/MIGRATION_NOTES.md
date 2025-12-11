@@ -96,7 +96,7 @@ The DotStat Suite was successfully migrated from Docker Compose to Kubernetes (k
 **Solution:**
 1. Removed client secret from realm JSON configuration
 2. Configured client as truly public in Keycloak admin console:
-   - Clients → stat-suite → Settings
+   - Clients -> stat-suite -> Settings
    - Set "Client authentication" to OFF
 
 **Note:** Public clients don't use secrets as they run in browsers where secrets cannot be kept secure.
@@ -112,7 +112,11 @@ The DotStat Suite was successfully migrated from Docker Compose to Kubernetes (k
 - Config-data was mounted but assets weren't copied during deployment
 
 **Solution:**
-Manual copy command required after deployment:
+Automated in `deploy-all.sh`:
+1. `docker cp` copies assets from host to k3d node volume path.
+2. `jobs/init-assets.yaml` job runs to ensure assets are in the correct location for the config-server.
+
+Manual fallback:
 ```bash
 kubectl cp ./config-data/assets/siscc \
   dotstat/$(kubectl get pod -n dotstat -l app=config-server -o jsonpath='{.items[0].metadata.name}'):/app/data/assets/
@@ -148,7 +152,7 @@ kubectl cp ./config-data/assets/siscc \
 - Mapping store requires DDL permissions for dynamic table creation
 
 **Solution:**
-Added `db_ddladmin` role membership to all database users to allow schema modifications.
+Automated in `deploy-all.sh` via `jobs/grant-permissions.yaml`. This job runs SQL commands to add the `db_ddladmin` role to the database users.
 
 ## Configuration Changes
 
@@ -181,32 +185,18 @@ Added `db_ddladmin` role membership to all database users to allow schema modifi
 
 ## Manual Steps Required After Deployment
 
-### 1. Copy Assets
-```bash
-kubectl cp ./config-data/assets/siscc \
-  dotstat/$(kubectl get pod -n dotstat -l app=config-server -o jsonpath='{.items[0].metadata.name}'):/app/data/assets/
-```
-
-### 2. Import Keycloak Realm
+### 1. Import Keycloak Realm
 1. Access Keycloak admin console (http://keycloak.local)
 2. Login with admin/P@ssw0rd!
 3. Create realm from `k8s/demo-realm/keycloack-demo-realm.json`
 4. Verify stat-suite client has "Client authentication" set to OFF
 
-### 3. Create Solr Collection (for search)
+### 2. Create Solr Collection (for search)
+*Note: This is handled by `jobs/bootstrap.yaml` if you run it, or can be done manually.*
 ```bash
 kubectl exec -n dotstat deployment/solr -- \
   curl "http://localhost:8983/solr/admin/collections?action=CREATE&name=demo&numShards=1&replicationFactor=1"
 ```
-
-### 4. Grant Database Permissions
-```bash
-kubectl exec -n dotstat deployment/sqlserver -- \
-  /opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P 'P@ssw0rd!' \
-  -Q "USE [dotstat-mapping]; ALTER ROLE db_ddladmin ADD MEMBER [mapping]; ALTER ROLE db_datawriter ADD MEMBER [mapping]; ALTER ROLE db_datareader ADD MEMBER [mapping];"
-```
-
-Repeat for data and common databases.
 
 ## Known Issues & Limitations
 
@@ -331,6 +321,3 @@ Repeat for data and common databases.
 - Keycloak Documentation: https://www.keycloak.org/docs/
 - SDMX Standards: https://sdmx.org/
 - Traefik Middleware: https://doc.traefik.io/traefik/middlewares/overview/
-
----
-**Last Updated:** 2025-11-17
