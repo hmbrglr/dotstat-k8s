@@ -11,7 +11,7 @@ spec:
       containers:
         - name: grant-permissions
           image: mcr.microsoft.com/mssql/server:2022-latest
-          command: ["/opt/mssql-tools18/bin/sqlcmd", "-S", "sqlserver", "-U", "sa", "-P", "P@ssw0rd!", "-Q", "USE [dotstat-mapping]; ALTER ROLE db_ddladmin ADD MEMBER [mapping];"]
+          command: ["/opt/mssql-tools18/bin/sqlcmd", "-S", "sqlserver", "-U", "sa", "-P", "P@ssw0rd!", "-C", "-Q", "USE [dotstat-mapping]; ALTER ROLE db_ddladmin ADD MEMBER [mapping];"]
           env:
             - name: ACCEPT_EULA
               value: "Y"

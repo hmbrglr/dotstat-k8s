@@ -41,6 +41,11 @@ kubectl delete job grant-permissions -n $NAMESPACE --ignore-not-found
 kubectl apply -f jobs/grant-permissions.yaml
 kubectl wait --for=condition=complete job/grant-permissions -n $NAMESPACE --timeout=60s
 
+# 4.2 Sync Assets to k3d container
+echo "[4.2/7] Syncing assets to k3d container..."
+docker cp config-data/assets k3d-dotstat-server-0:/var/lib/dotstat/config-data/ || echo "Warning: Failed to sync assets. UI may be missing logos/icons."
+docker cp config-data/i18n k3d-dotstat-server-0:/var/lib/dotstat/config-data/ || echo "Warning: Failed to sync i18n. UI may show raw keys."
+
 # 5. Asset Initialization
 echo "[5/7] Initializing assets..."
 kubectl delete job init-assets -n $NAMESPACE --ignore-not-found

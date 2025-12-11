@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+    xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure"
+    xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common"
+>
+    <message:Header>
+        <message:ID>ExampleStructureHeader</message:ID>
+        <message:Test>false</message:Test>
+        <message:Prepared>2025-07-27T08:20:00Z</message:Prepared>
+        <message:Sender id="EXAMPLE_ORG" />
+    </message:Header>
+    <message:Structures>
+        <!-- Category Scheme and Category -->
+        <structure:CategorySchemes>
+            <structure:CategoryScheme id="CAT_SCHEME_EXAMPLE" agencyID="EXAMPLE" version="1.0">
+                <common:Name>Example Category Scheme</common:Name>
+                <structure:Category id="CAT_GDP">
+                    <common:Name>GDP Data</common:Name>
+                </structure:Category>
+            </structure:CategoryScheme>
+        </structure:CategorySchemes>
+        <structure:Codelists>
+            <structure:Codelist id="CL_FREQ" agencyID="EXAMPLE" version="1.0">
+                <common:Name>Frequency</common:Name>
+                <structure:Code id="Q">
+                    <common:Name>Quarterly</common:Name>
+                </structure:Code>
+                <structure:Code id="A">
+                    <common:Name>Annual</common:Name>
+                </structure:Code>
+            </structure:Codelist>
+            <structure:Codelist id="CL_COUNTRY" agencyID="EXAMPLE" version="1.0">
+                <common:Name>Country</common:Name>
+                <structure:Code id="US">
+                    <common:Name>United States</common:Name>
+                </structure:Code>
+                <structure:Code id="FR">
+                    <common:Name>France</common:Name>
+                </structure:Code>
+                <structure:Code id="DE">
+                    <common:Name>Germany</common:Name>
+                </structure:Code>
+            </structure:Codelist>
+            <structure:Codelist id="CL_UNIT" agencyID="EXAMPLE" version="1.0">
+                <common:Name>Unit Measure</common:Name>
+                <structure:Code id="USD">
+                    <common:Name>US Dollar</common:Name>
+                </structure:Code>
+                <structure:Code id="EUR">
+                    <common:Name>Euro</common:Name>
+                </structure:Code>
+            </structure:Codelist>
+        </structure:Codelists>
+        <structure:Concepts>
+            <structure:ConceptScheme id="CS_EXAMPLE" agencyID="EXAMPLE" version="1.0">
+                <common:Name>Concept Scheme</common:Name>
+                <structure:Concept id="FREQ">
+                    <common:Name>Frequency</common:Name>
+                </structure:Concept>
+                <structure:Concept id="COUNTRY">
+                    <common:Name>Country</common:Name>
+                </structure:Concept>
+                <structure:Concept id="UNIT_MEASURE">
+                    <common:Name>Unit Measure</common:Name>
+                </structure:Concept>
+                <structure:Concept id="OBS_VALUE">
+                    <common:Name>Observation Value</common:Name>
+                </structure:Concept>
+                <structure:Concept id="TIME_PERIOD">
+                    <common:Name>Time Period</common:Name>
+                </structure:Concept>
+            </structure:ConceptScheme>
+        </structure:Concepts>
+        <structure:DataStructures>
+            <structure:DataStructure id="DSD_EXAMPLE" agencyID="EXAMPLE" version="1.0">
+                <common:Name>Example GDP DSD</common:Name>
+                <structure:DataStructureComponents>
+                    <structure:DimensionList>
+                        <structure:Dimension id="FREQ" position="1">
+                            <structure:ConceptIdentity>
+                                <Ref id="FREQ" class="Concept" package="conceptscheme"
+                                    agencyID="EXAMPLE" maintainableParentID="CS_EXAMPLE" />
+                            </structure:ConceptIdentity>
+                            <structure:LocalRepresentation>
+                                <structure:Enumeration>
+                                    <Ref id="CL_FREQ" class="Codelist" package="codelist"
+                                        agencyID="EXAMPLE" />
+                                </structure:Enumeration>
+                            </structure:LocalRepresentation>
+                        </structure:Dimension>
+                        <structure:Dimension id="COUNTRY" position="2">
+                            <structure:ConceptIdentity>
+                                <Ref id="COUNTRY" class="Concept" package="conceptscheme"
+                                    agencyID="EXAMPLE" maintainableParentID="CS_EXAMPLE" />
+                            </structure:ConceptIdentity>
+                            <structure:LocalRepresentation>
+                                <structure:Enumeration>
+                                    <Ref id="CL_COUNTRY" class="Codelist" package="codelist"
+                                        agencyID="EXAMPLE" />
+                                </structure:Enumeration>
+                            </structure:LocalRepresentation>
+                        </structure:Dimension>
+                        <structure:Dimension id="UNIT_MEASURE" position="3">
+                            <structure:ConceptIdentity>
+                                <Ref id="UNIT_MEASURE" class="Concept" package="conceptscheme"
+                                    agencyID="EXAMPLE" maintainableParentID="CS_EXAMPLE" />
+                            </structure:ConceptIdentity>
+                            <structure:LocalRepresentation>
+                                <structure:Enumeration>
+                                    <Ref id="CL_UNIT" class="Codelist" package="codelist"
+                                        agencyID="EXAMPLE" />
+                                </structure:Enumeration>
+                            </structure:LocalRepresentation>
+                        </structure:Dimension>
+                        <structure:TimeDimension id="TIME_PERIOD" position="4">
+                            <structure:ConceptIdentity>
+                                <Ref id="TIME_PERIOD" class="Concept" package="conceptscheme"
+                                    agencyID="EXAMPLE" maintainableParentID="CS_EXAMPLE" />
+                            </structure:ConceptIdentity>
+                            <structure:LocalRepresentation>
+                                <structure:TextFormat textType="ObservationalTimePeriod" />
+                            </structure:LocalRepresentation>
+                        </structure:TimeDimension>
+                    </structure:DimensionList>
+                    <structure:MeasureList>
+                        <structure:PrimaryMeasure id="OBS_VALUE">
+                            <structure:ConceptIdentity>
+                                <Ref id="OBS_VALUE" class="Concept" package="conceptscheme"
+                                    agencyID="EXAMPLE" maintainableParentID="CS_EXAMPLE" />
+                            </structure:ConceptIdentity>
+                        </structure:PrimaryMeasure>
+                    </structure:MeasureList>
+                </structure:DataStructureComponents>
+            </structure:DataStructure>
+        </structure:DataStructures>
+    </message:Structures>
+</message:Structure>
